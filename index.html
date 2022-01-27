@@ -8,6 +8,7 @@
     <!--LINKEO CSS-->
     <link rel="stylesheet" href="estilo css/style-pp.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="body" id="cuerpoIndex">
     <!--INICIO ENCABEZADO-->
@@ -42,19 +43,19 @@
     </section>
     <!--INICIO GALERÍA DE FOTOS-->
     <section class="galeriaDeFotos" id="galeria">
-        <div class="subGaleria">
+        <div class="subGaleria" data-aos="fade-left">
             <img src="./assets-img/IMG_20210629_133238_069.jpg" class="fotoGaleria">
         </div>
-        <div class="subGaleria">
+        <div class="subGaleria"data-aos="fade-right">
             <img src="./assets-img/FB_IMG_1619111050716.jpg" class="fotoGaleria">
         </div>
-        <div class="subGaleria">
+        <div class="subGaleria" data-aos="fade-left">
             <img src="./assets-img/FB_IMG_1619110816833.jpg" class="fotoGaleria">
         </div>
-        <div class="subGaleria">
+        <div class="subGaleria"data-aos="fade-right">
             <img src="./assets-img/IMG_20210907_204946_996.jpg" class="fotoGaleria">
         </div>
-        <div class="subGaleria">
+        <div class="subGaleria" data-aos="fade-left">
             <img src="./assets-img/IMG_20210520_165613008_HDR.jpg" class="fotoGaleria">
         </div>
     </section>
@@ -112,5 +113,10 @@
         </address>
     </Footer>
     <!--FIN PIE DE PÁGINA-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>
