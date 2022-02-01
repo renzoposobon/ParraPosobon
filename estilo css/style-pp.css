@@ -330,6 +330,7 @@ video {
     "cabezaComprar"
     "tituloComprar"
     "textoComprar"
+    "boton"
     "subtituloComprar"
     "listaComprar"
     "pieComprar";
@@ -347,6 +348,12 @@ video {
 
 #textoComprar {
     grid-area: textoComprar;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    grid-area: boton;
     display: flex;
     justify-content: center;
 }
@@ -810,6 +817,7 @@ video {
     "cabezaComprar"
     "tituloComprar"
     "textoComprar"
+    "boton"
     "subtituloComprar"
     "listaComprar"
     "pieComprar";
@@ -827,6 +835,12 @@ video {
 
 #textoComprar {
     grid-area: textoComprar;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    grid-area: boton;
     display: flex;
     justify-content: center;
 }
@@ -1302,6 +1316,7 @@ video {
     "cabezaComprar"
     "tituloComprar"
     "textoComprar"
+    "boton"
     "subtituloComprar"
     "listaComprar"
     "pieComprar";
@@ -1319,6 +1334,12 @@ video {
 
 #textoComprar {
     grid-area: textoComprar;
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    grid-area: boton;
     display: flex;
     justify-content: center;
 }
