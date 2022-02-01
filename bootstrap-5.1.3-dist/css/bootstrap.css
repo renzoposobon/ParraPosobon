@@ -4943,6 +4943,7 @@ textarea.form-control-lg {
   color: #055160;
   background-color: #cff4fc;
   border-color: #b6effb;
+  margin: 0 3% 0 3%;
 }
 .alert-info .alert-link {
   color: #04414d;

@@ -257,6 +257,7 @@ video {
     "cabezaProductos"
     "tituloProductos"
     "catalogo"
+    "icono"
     "pieProductos";
     grid-template-columns: 100%;
     /*grid-template-rows: 210px 4% auto 200px;*/
@@ -274,6 +275,11 @@ video {
 
 #catalogo {
     grid-area: catalogo;
+}
+
+#icono {
+    grid-area: icono;
+    margin: 0 3% 0 3%;
 }
 
 #pieProductos {
@@ -745,6 +751,7 @@ video {
     "cabezaProductos"
     "tituloProductos"
     "catalogo"
+    "icono"
     "pieProductos";
     grid-template-columns: 100%;
     /*grid-template-rows: 210px 4% auto 200px;*/
@@ -764,6 +771,10 @@ video {
     grid-area: catalogo;
 }
 
+#icono {
+    grid-area: icono;
+    margin: 0 3% 0 3%;
+}
 #pieProductos {
     grid-area: pieProductos;
 }
@@ -1244,6 +1255,7 @@ video {
     "cabezaProductos"
     "tituloProductos"
     "catalogo"
+    "icono"
     "pieProductos";
     grid-template-columns: 100%;
     /*grid-template-rows: 210px 4% auto 200px;*/
@@ -1261,6 +1273,11 @@ video {
 
 #catalogo {
     grid-area: catalogo;
+}
+
+#icono {
+    grid-area: icono;
+    margin: 0 3% 0 3%;
 }
 
 #pieProductos {
