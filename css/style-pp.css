@@ -72,6 +72,23 @@ p {
     line-height: 1.6;
 }
 
+.logoWhatsapp {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+img.whatsapp {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    right: 1210px;
+    top: 550px;
+    z-index: 1;
+    position: fixed;
+}
+
 .subGaleria {
 
     margin: 0% 7% 7% 7%;
@@ -119,6 +136,7 @@ p {
     display: grid;
     grid-template-areas: 
     "cabeza"
+    "whatsapp"
     "principal"
     "galeria"
     "secundario"
@@ -131,6 +149,10 @@ p {
 
 #cabeza {
     grid-area: cabeza;
+}
+
+#whatsapp {
+    grid-area: whatsapp;
 }
 
 .principal {
@@ -566,6 +588,23 @@ p {
     line-height: 1.6;
 }
 
+.logoWhatsapp {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+img.whatsapp {
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+    right: 810px;
+    top: 550px;
+    z-index: 1;
+    position: fixed;
+}
+
 .subGaleria {
 
     margin: 0% 7% 7% 7%;
@@ -612,6 +651,7 @@ p {
     display: grid;
     grid-template-areas: 
     "cabeza"
+    "whatsapp"
     "principal"
     "galeria"
     "secundario"
@@ -624,6 +664,10 @@ p {
 
 #cabeza {
     grid-area: cabeza;
+}
+
+#whatsapp {
+    grid-area: whatsapp;
 }
 
 .principal {
@@ -1058,6 +1102,23 @@ p {
     line-height: 1.6;
 }
 
+.logoWhatsapp {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+img.whatsapp {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    right: 1210px;
+    top: 550px;
+    z-index: 1;
+    position: fixed;
+}
+
 .subGaleria {
 
     margin: 0% 7% 7% 7%;
@@ -1116,6 +1177,7 @@ p {
     display: grid;
     grid-template-areas: 
     "cabeza"
+    "whatsapp"
     "principal"
     "galeria"
     "secundario"
@@ -1128,6 +1190,10 @@ p {
 
 #cabeza {
     grid-area: cabeza;
+}
+
+#whatsapp {
+    grid-area: whatsapp;
 }
 
 .principal {
