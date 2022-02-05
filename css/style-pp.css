@@ -43,10 +43,9 @@ a {
 }
         
 .listas {
-    background-color: #70e0ad;
+    background-image: radial-gradient(#99D3E0 15%, salmon 80%);
     padding: 6px;
     margin: 20px;
-    border: dotted #FC9EFF 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
 }
@@ -65,7 +64,7 @@ a {
         /*TEXTO DE APERTURA*/
 p {
     background-color: salmon none;
-    font-size: 60px;
+    font-size: 45px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-weight: bold 900 italic;
@@ -573,10 +572,9 @@ a {
 }
         
 .listas {
-    background-color: #70e0ad;
+    background-image: radial-gradient(#99d3e0 15%, #f0c0f1 80%);
     padding: 5px;
     margin: 5px;
-    border: dotted #FC9EFF 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
 }
@@ -654,8 +652,7 @@ img.whatsapp {
 
         /*PÁRRAFO ABAJO*/
 .parrafoDos {
-    font-size: 60px;
-    border: dashed white;
+    font-size: 40px;
 } 
 
 .tituloSeccion {
@@ -872,7 +869,7 @@ video {
 
 .subtituloComprar {
     background-color: #70e0ad;
-    font-size: 45px;
+    font-size: 35px;
     margin: 30px;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
@@ -887,7 +884,7 @@ video {
 }
 
 .listaOpcionesPago {
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
     width: 600px;
     height: auto;
@@ -1105,10 +1102,9 @@ a {
 }
         
 .listas {
-    background-color: #70e0ad;
+    background-image: radial-gradient(#99d3e0 15%, #f0c0f1 80%);
     padding: 5px;
     margin: 5px;
-    border: dotted #FC9EFF 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
