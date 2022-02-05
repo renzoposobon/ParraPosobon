@@ -84,10 +84,6 @@ p {
 
 
 .logoWhatsapp {
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
     animation-name: logoWhatsapp;
     animation-iteration-count: initial;
     animation-timing-function: ease-in;
@@ -101,6 +97,7 @@ img.whatsapp {
     z-index: 1;
     position: fixed;
 }
+
 
 .subGaleria {
 
