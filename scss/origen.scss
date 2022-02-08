@@ -1,42 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,900&display=swap');
+//import
+@import "tipografia";
+@import "responsive";
 
+//variables
+$fondo: sandybrown;
+
+//nesting
 @media (min-width: 1024px) {
     #promociones {
         display: flex;
         justify-content: center;
         align-items: center;
         h3 {
-            font-size: 45px;
-            text-align: center;
-            font-family: 'Source Sans Pro', sans-serif;
+            background-color: $fondo;
         }
         .caracteristicas {
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
             ul {
-                margin: 30px;
-                text-align: center;
                 li {
-                    font-size: 30px;
-                    font-family: 'Source Sans Pro', sans-serif;
                     text-align: center;
                 }
-            }
-        }
-        div {
-            ul {
-                li {
-                    font-size: 35px;
-                    font-family: 'Source Sans Pro', sans-serif;
-                }
-            }
-        }
-        div {
-            p {
-                font-size: 30px !important;
-                font-family: 'Source Sans Pro', sans-serif;
             }
         }
     }
@@ -48,35 +30,13 @@
         justify-content: center;
         align-items: center;
         h3 {
-            font-size: 40px;
-            text-align: center;
-            font-family: 'Source Sans Pro', sans-serif;
+            background-color: $fondo;
         }
         .caracteristicas {
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
             ul {
-                margin: 20px;
-                text-align: center;
                 li {
-                    font-size: 23px;
-                    font-family: 'Source Sans Pro', sans-serif;
                     text-align: center;
                 }
-            }
-        }
-        div {
-            ul {
-                li {
-                    font-size: 27px;
-                    font-family: 'Source Sans Pro', sans-serif;
-                }
-            }
-        }
-        div {
-            p {
-                font-size: 23px !important;
-                font-family: 'Source Sans Pro', sans-serif;
             }
         }
     }
@@ -88,35 +48,13 @@
         justify-content: center;
         align-items: center;
         h3 {
-            font-size: 30px;
-            text-align: center;
-            font-family: 'Source Sans Pro', sans-serif;
+            background-color: $fondo;
         }
         .caracteristicas {
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
             ul {
-                margin: 18px;
-                text-align: center;
                 li {
-                    font-size: 20px;
-                    font-family: 'Source Sans Pro', sans-serif;
                     text-align: center;
                 }
-            }
-        }
-        div {
-            ul {
-                li {
-                    font-size: 23px;
-                    font-family: 'Source Sans Pro', sans-serif;
-                }
-            }
-        }
-        div {
-            p {
-                font-size: 20px !important;
-                font-family: 'Source Sans Pro', sans-serif;
             }
         }
     }

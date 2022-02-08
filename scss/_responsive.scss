@@ -1,0 +1,87 @@
+
+//DESKTOP
+@media (min-width: 1024px) {
+    #promociones {
+        h3 {
+            font-size: 45px;
+        }
+        .caracteristicas {
+            ul {
+                margin: 30px;
+                li {
+                    font-size: 30px;
+                }
+            }
+        }
+        div {
+            ul {
+                li {
+                    font-size: 35px;
+                }
+            }
+        }
+        div {
+            p {
+                font-size: 30px !important;
+            }
+        }
+    }
+}
+
+//TABLET
+@media (min-width: 481px) and (max-width: 1023px) {
+    #promociones {
+        h3 {
+            font-size: 40px;
+        }
+        .caracteristicas {
+            ul {
+                margin: 20px;
+                li {
+                    font-size: 23px;
+                }
+            }
+        }
+        div {
+            ul {
+                li {
+                    font-size: 27px;
+                }
+            }
+        }
+        div {
+            p {
+                font-size: 23px !important;
+            }
+        }
+    }
+}
+
+//SMARTPHONE
+@media (max-width: 480px) {
+    #promociones {
+        h3 {
+            font-size: 30px;
+        }
+        .caracteristicas {
+            ul {
+                margin: 18px;
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+        div {
+            ul {
+                li {
+                    font-size: 23px;
+                }
+            }
+        }
+        div {
+            p {
+                font-size: 20px !important;
+            }
+        }
+    }
+}
