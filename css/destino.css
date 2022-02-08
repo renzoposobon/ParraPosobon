@@ -1,3 +1,80 @@
-/*comentario*/
-.clase {
-  background-color: #fff; }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,900&display=swap");
+@media (min-width: 1024px) {
+  #promociones {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #promociones h3 {
+      font-size: 45px;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #promociones .caracteristicas {
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center; }
+      #promociones .caracteristicas ul {
+        margin: 30px;
+        text-align: center; }
+        #promociones .caracteristicas ul li {
+          font-size: 30px;
+          font-family: 'Source Sans Pro', sans-serif;
+          text-align: center; }
+    #promociones div ul li {
+      font-size: 35px;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #promociones div p {
+      font-size: 30px !important;
+      font-family: 'Source Sans Pro', sans-serif; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #promociones {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #promociones h3 {
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #promociones .caracteristicas {
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center; }
+      #promociones .caracteristicas ul {
+        margin: 20px;
+        text-align: center; }
+        #promociones .caracteristicas ul li {
+          font-size: 23px;
+          font-family: 'Source Sans Pro', sans-serif;
+          text-align: center; }
+    #promociones div ul li {
+      font-size: 27px;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #promociones div p {
+      font-size: 23px !important;
+      font-family: 'Source Sans Pro', sans-serif; } }
+
+@media (max-width: 480px) {
+  #promociones {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #promociones h3 {
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #promociones .caracteristicas {
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center; }
+      #promociones .caracteristicas ul {
+        margin: 18px;
+        text-align: center; }
+        #promociones .caracteristicas ul li {
+          font-size: 20px;
+          font-family: 'Source Sans Pro', sans-serif;
+          text-align: center; }
+    #promociones div ul li {
+      font-size: 23px;
+      font-family: 'Source Sans Pro', sans-serif; }
+    #promociones div p {
+      font-size: 20px !important;
+      font-family: 'Source Sans Pro', sans-serif; } }
