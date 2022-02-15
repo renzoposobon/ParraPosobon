@@ -15,7 +15,7 @@ $fondo: sandybrown;
             background-color: $fondo;
         }
         .caracteristicas {
-            ul {
+            .promo {
                 li {
                     text-align: center;
                 }
@@ -33,7 +33,7 @@ $fondo: sandybrown;
             background-color: $fondo;
         }
         .caracteristicas {
-            ul {
+            .promo {
                 li {
                     text-align: center;
                 }
@@ -51,11 +51,23 @@ $fondo: sandybrown;
             background-color: $fondo;
         }
         .caracteristicas {
-            ul {
+            .promo {
                 li {
                     text-align: center;
                 }
             }
         }
+    }
+}
+
+/*extend*/
+.promo {
+    text-decoration: underline;
+    }
+
+.divPrecio {
+    .promo--Precio {
+        @extend .promo;
+        border: salmon none;
     }
 }

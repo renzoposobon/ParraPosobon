@@ -45,7 +45,7 @@ body {
     align-items: center; }
     #promociones h3 {
       background-color: sandybrown; }
-    #promociones .caracteristicas ul li {
+    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li {
       text-align: center; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -55,7 +55,7 @@ body {
     align-items: center; }
     #promociones h3 {
       background-color: sandybrown; }
-    #promociones .caracteristicas ul li {
+    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li {
       text-align: center; } }
 
 @media (max-width: 480px) {
@@ -65,5 +65,12 @@ body {
     align-items: center; }
     #promociones h3 {
       background-color: sandybrown; }
-    #promociones .caracteristicas ul li {
+    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li {
       text-align: center; } }
+
+/*extend*/
+.promo, .divPrecio .promo--Precio {
+  text-decoration: underline; }
+
+.divPrecio .promo--Precio {
+  border: salmon none; }
