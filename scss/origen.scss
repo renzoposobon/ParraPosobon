@@ -1,6 +1,8 @@
 //import
 @import "tipografia";
 @import "responsive";
+@import "extend";
+@import "mixin";
 
 //variables
 $fondo: sandybrown;
@@ -60,14 +62,3 @@ $fondo: sandybrown;
     }
 }
 
-/*extend*/
-.promo {
-    text-decoration: underline;
-    }
-
-.divPrecio {
-    .promo--Precio {
-        @extend .promo;
-        border: salmon none;
-    }
-}

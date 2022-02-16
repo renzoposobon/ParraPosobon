@@ -1,0 +1,18 @@
+/*extend*/
+.promo {
+    text-decoration: underline;
+    }
+
+.divPrecio {
+    .promo--Precio {
+        @extend .promo;
+        color: rgb(82, 30, 24);
+    }
+}
+
+div {
+    p {
+        @extend .promo;
+        color: rgb(82, 30, 24);
+    }
+}
