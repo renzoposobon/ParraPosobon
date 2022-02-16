@@ -1,4 +1,10 @@
-$ancho: 350px;
-$alto: auto;
-$margen: 30px;
-$borde: black solid;
+/*mixin*/
+
+@mixin caracteristicas {
+    line-height: 2;
+    text-decoration: underline wavy red;
+}
+
+.tituloSeccion {
+    @include caracteristicas;
+}

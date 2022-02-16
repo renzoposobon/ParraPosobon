@@ -11,7 +11,7 @@
 }
 
 div {
-    p {
+    .parrafoCaracteristicas {
         @extend .promo;
         color: rgb(82, 30, 24);
     }

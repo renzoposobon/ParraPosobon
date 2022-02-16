@@ -39,14 +39,19 @@ body {
     font-size: 20px !important; } }
 
 /*extend*/
-.promo, .divPrecio .promo--Precio, div p {
+.promo, .divPrecio .promo--Precio, div .parrafoCaracteristicas {
   text-decoration: underline; }
 
 .divPrecio .promo--Precio {
   color: #521e18; }
 
-div p {
+div .parrafoCaracteristicas {
   color: #521e18; }
+
+/*mixin*/
+.tituloSeccion {
+  line-height: 2;
+  text-decoration: underline wavy red; }
 
 @media (min-width: 1024px) {
   #promociones {
@@ -55,7 +60,7 @@ div p {
     align-items: center; }
     #promociones h3 {
       background-color: sandybrown; }
-    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div p li, div #promociones .caracteristicas p li {
+    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
       text-align: center; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -65,7 +70,7 @@ div p {
     align-items: center; }
     #promociones h3 {
       background-color: sandybrown; }
-    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div p li, div #promociones .caracteristicas p li {
+    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
       text-align: center; } }
 
 @media (max-width: 480px) {
@@ -75,5 +80,5 @@ div p {
     align-items: center; }
     #promociones h3 {
       background-color: sandybrown; }
-    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div p li, div #promociones .caracteristicas p li {
+    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
       text-align: center; } }
