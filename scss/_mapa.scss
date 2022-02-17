@@ -1,0 +1,18 @@
+/*map*/
+
+$redes: (
+    /*efectivo: green,
+    mercado-pago: rgb(14, 128, 194),
+    transferencia: red,
+    uala: orange,*/
+    text-decoration: underline dotted #FF3028
+);
+
+@each $name-color, $bgcolor in $redes {
+    .color-#{$name-color} {
+        /*background-color: $bgcolor;
+        border: $bgcolor;*/
+        text-decoration: $bgcolor;
+    }
+}
+

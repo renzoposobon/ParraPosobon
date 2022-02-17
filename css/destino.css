@@ -53,6 +53,12 @@ div .parrafoCaracteristicas {
   line-height: 2;
   text-decoration: underline wavy red; }
 
+/*map*/
+.color-text-decoration {
+  /*background-color: $bgcolor;
+        border: $bgcolor;*/
+  text-decoration: underline dotted #FF3028; }
+
 @media (min-width: 1024px) {
   #promociones {
     display: flex;
