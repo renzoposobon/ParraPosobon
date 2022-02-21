@@ -1,3 +1,107 @@
+/*****INDEX*****/
+@media (min-width: 1024px) {
+    body {
+        header {
+            div {
+                ul {
+                    li {
+                        a {
+                            .logo {
+                                width: 150px;
+                                margin: 30px;
+                                background-color: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav {
+                .menu {
+                    li {
+                        .listas {
+                            background-image: radial-gradient(#99D3E0 15%, salmon 80%);
+                            padding: 6px;
+                            margin: 20px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .principal {
+            p {
+                font-size: 45px;
+            }
+        }
+        #whatsapp {
+                ul {
+                    li {
+                        a {
+                            img {
+                                height: 100px;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+        }
+        .secundario {
+          /*  margin-top: 50px;*/
+            .parrafoDos {
+                font-size: 60px;
+            }
+        }
+        footer {
+   
+            .redesSociales {
+                justify-content: flex-start;
+            }
+            address {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+//TABLET
+@media (min-width: 481px) and (max-width: 1023px) {
+
+}
+//DESKTOP
+@media (max-width: 480px) {
+
+}
+
+/*****SOBRE MÍ*****/
+//DESKTOP
+@media (min-width: 1024px) {
+    #cuerpoSobreMi {
+        #tituloSobreMi {
+            .tituloSeccion {
+                font-size: 60px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+        }
+        #textoSobreMi {
+            .container {
+                .parrafoDeContenido {
+                    font-size: 20px;
+                    margin: 25px;
+                }
+            }
+        }
+    }
+}
+//TABLET
+@media (min-width: 481px) and (max-width: 1023px) {
+    
+}
+//SMARTPHONE
+@media (max-width: 480px) {
+
+}
+
+/*****PRODUCTOS*****/
 
 //DESKTOP
 @media (min-width: 1024px) {
@@ -84,4 +188,63 @@
             }
         }
     }
+}
+
+/*****COMPRAR*****/
+//DESKTOP
+@media (min-width: 1024px) {
+    #cuerpoComprar {
+        #tituloComprar {
+            .tituloSeccion {
+                font-size: 60px;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+        }
+        #textoComprar {
+            .parrafoComprar {
+                font-size: 35px;
+                width: 700px;
+                height: auto;
+            }
+        }
+        #subtituloComprar {
+            .subtituloComprar {
+                font-size: 45px;
+                margin: 30px;
+                width: 520px;
+            }
+        }
+        #listaComprar {
+            margin: 30px;
+            .listaOpcionesPago {
+                font-size: 35px;
+                width: 600px;
+                height: auto;
+                padding: 10px;
+            }
+        }
+    }
+}
+//TABLET
+@media (min-width: 481px) and (max-width: 1023px) {
+
+}
+//SMARTPHONE
+@media (max-width: 480px) {
+
+}
+
+/*****CONTACTO*****/
+//DESKTOP
+@media (min-width: 1024px) {
+
+}
+//TABLET
+@media (min-width: 481px) and (max-width: 1023px) {
+    
+}
+//SMARTPHONE
+@media (max-width: 480px) {
+
 }

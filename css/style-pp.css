@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,900&display=swap');
 
 *{
     padding: 0;
@@ -12,20 +10,20 @@
 
 
 
-/*CUERPO*/
+/*CUERPO*
 .body {
     background-color: #f0c0f1;
 }
 
 
-/*LOGO*/
+/*LOGO*
 .logo {
     width: 150px;
     margin: 30px;
     background-color: none;
 }
 
-/*MENÚ*/
+/*MENÚ*
 ul {
     list-style: none;
 }
@@ -41,7 +39,7 @@ a {
     align-items: center;
     align-content: center;
 }
-        
+     
 .listas {
     background-image: radial-gradient(#99D3E0 15%, salmon 80%);
     padding: 6px;
@@ -49,7 +47,7 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
 }
-        
+       
 .cabecera {
     background-color: salmon;
     display: flex;
@@ -58,10 +56,10 @@ a {
     align-content: center;
     align-items: center;
 }
+*/
 
-
-    /*PRINCIPAL*/
-        /*TEXTO DE APERTURA*/
+    /*PRINCIPAL*
+        /*TEXTO DE APERTURA*
 p {
     background-color: salmon none;
     font-size: 45px;
@@ -80,7 +78,6 @@ p {
         transform: translateX(0);
     }
 }
-
 
 .logoWhatsapp {
     animation-name: logoWhatsapp;
@@ -110,37 +107,27 @@ img.whatsapp {
     width: 90%;
     height: auto;
     border: black solid;
-}*/
+}*
 
 .carousel-inner {
     width: 100%;
     height: auto;
 }
+*
 
-
-        /*PÁRRAFO ABAJO*/
+        /*PÁRRAFO ABAJO*
 .parrafoDos {
     font-size: 60px;
     border: dashed white;
-} 
-
-.tituloSeccion {
-    font-size: 60px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-weight: bold 900 italic;
-    line-height: 1.6;
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 
 .sub {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*
 
-/***GRID AREA INDEX***/
+/***GRID AREA INDEX***
 #cuerpoIndex {
     display: grid;
     grid-template-areas: 
@@ -151,9 +138,7 @@ img.whatsapp {
     "secundario"
     "pie";
     grid-template-columns: 100%;
-   /* grid-template-rows: 210px 4% auto 5% 200px;*/
-   /* grid-template-rows: 210px 4% auto auto 200px;*/
-   grid-template-rows: auto;
+    grid-template-rows: auto;
 }
 
 #cabeza {
@@ -172,10 +157,7 @@ img.whatsapp {
     margin-left: 10%;
     margin-right: 10%;
 }
-/*
-#galeria {
-    grid-area: galeria;
-}*/
+
 #carouselExampleIndicators {
     grid-area: galeria;
 }
@@ -188,8 +170,19 @@ img.whatsapp {
 #pie {
     grid-area: pie;
 }
-
+*/
 /*INICIO SOBRE MÍ*/
+/*
+.tituloSeccion {
+    font-size: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: bold 900 italic;
+    line-height: 1.6;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 .parrafoDeContenido {
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -208,8 +201,9 @@ video {
     margin: 2% 10% 2% 10%;
     width: 80%;
 }
-
+*/
 /***GRID AREA SOBRE MÍ***/
+/*
 #cuerpoSobreMi {
     display: grid;
     grid-template-areas: 
@@ -220,7 +214,6 @@ video {
     "videoSobreMi"
     "pieSobreMi";
     grid-template-columns: 100%;
-    /*grid-template-rows: 210px 4% auto auto 200px;*/
     grid-template-rows: auto;
 }
 
@@ -243,6 +236,7 @@ video {
 #pieSobreMi {
     grid-area: pieSobreMi;
 }
+*/
 /*FIN SOBRE MÍ*/
 
 /*INICIO PRODUCTOS*/
@@ -331,6 +325,7 @@ video {
 /*FIN PRODUCTOS*/
 
 /*INICIO COMPRAR*/
+/*
 .parrafoComprar {
     font-size: 35px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -369,9 +364,10 @@ video {
     text-align: center;
     padding: 10px;
 }
-
+*/
 
 /***GRID AREA COMPRAR***/
+/*
 #cuerpoComprar {
     display: grid;
     grid-template-areas:
@@ -419,7 +415,7 @@ video {
 
 #pieComprar {
     grid-area: pieComprar;
-}
+}*/
 /***FIN COMPRAR***/
 
 /***INICIO CONTACTO***/
@@ -523,21 +519,23 @@ textarea {
 }
 
     /*PIE DE PÁGINA*/
+    /*
 footer {
     background-color: rgb(179, 159, 159);
-    /*height: 100px;*/ /*cuando aplique flexbox poner esta propiedad*/
     height: auto;
 
-}
+}*/
         /*REDES SOCIALES*/
+        /*
 .redesSociales {
     margin: 30px;
     padding: 10px;
     display: flex;
     align-items: center;
-}
+}*/
 
 /*COPYRIGHT*/
+/*
 address {
     display: flex;
     justify-content: flex-end;
@@ -547,7 +545,7 @@ address {
     font-family: 'Secular One', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
+*/
 }
 
 /****TABLET****/
@@ -1064,9 +1062,7 @@ textarea {
     /*PIE DE PÁGINA*/
 footer {
     background-color: rgb(179, 159, 159);
-    /*height: 100px;*/ /*cuando aplique flexbox poner esta propiedad*/
     height: auto;
-
 }
         /*REDES SOCIALES*/
 .redesSociales {

@@ -4,62 +4,397 @@
 @import "extend";
 @import "mixin";
 @import "mapa";
+@import "colores";
 
 //variables
-$fondo: sandybrown;
+$fondo1: #f0c0f1;
+$fondo2: sandybrown;
+$colorLista: black;
+$fondoCabecera: salmon;
+$pie: rgb(179, 159, 159);
+$subComprar: #70e0ad;
 
-//nesting
-@media (min-width: 1024px) {
-    #promociones {
+/*INDEX*/
+#cuerpoIndex {
+    background-color: $fondo1;
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "whatsapp"
+    "principal"
+    "galeria"
+    "secundario"
+    "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    #cabeza {
+        background-color: $fondoCabecera;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        grid-area: cabeza;
+        div {
+            ul {
+                list-style-type: none;
+            }
+        }
+        .nav {
+            .menu {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    li {
+                        .listas {
+                            text-decoration: none;
+                            color: $colorLista;
+                            font-family: $fuente;
+                        }
+                    }
+            }
+        }
+    }
+    .principal {
+        grid-area: principal;
         display: flex;
         justify-content: center;
         align-items: center;
-        h3 {
-            background-color: $fondo;
+        margin-left: 10%;
+        margin-right: 10%;
+        p {
+            font-family: $fuente;
+            text-align: center;
+            font-weight: bold 900 italic;
+            line-height: 1.6;
         }
-        .caracteristicas {
-            .promo {
-                li {
-                    text-align: center;
+    }
+    #whatsapp {
+        animation-name: logoWhatsapp;
+        animation-iteration-count: initial;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        grid-area: whatsapp;
+        ul {
+            list-style-type: none;
+            li {
+                a {
+                    img {
+                        z-index: 1;
+                        position: fixed;
+                    }
                 }
+            }
+        }
+    }
+    #carouselExampleIndicators {
+        grid-area: galeria;
+        .carousel-inner {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .secundario {
+        grid-area: secundario;
+        .parrafoDos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    footer {
+        grid-area: pie;
+        background-color: $pie;
+        height: auto;
+        .redesSociales {
+            list-style-type: none;
+            margin: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        address {
+            display: flex;
+            margin: 10px;
+        }
+    }
+}
+
+@keyframes logoWhatsapp {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*SOBRE MI*/
+#cuerpoSobreMi {
+    background-color: $fondo1;
+    display: grid;
+    grid-template-areas: 
+    "cabezaSobreMi"
+    "tituloSobreMi"
+    "whatsapp"
+    "textoSobreMi"
+    "videoSobreMi"
+    "pieSobreMi";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    #cabezaSobreMi {
+        grid-area: cabezaSobreMi;
+        background-color: $fondoCabecera;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        div {
+            ul {
+                list-style-type: none;
+            }
+        }
+        .nav {
+            .menu {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    li {
+                        .listas {
+                            text-decoration: none;
+                            color: $colorLista;
+                            font-family: $fuente;
+                        }
+                    }
+            }
+        }
+    }
+    #tituloSobreMi {
+        grid-area: tituloSobreMi;
+        .tituloSeccion {
+            text-align: center;
+            font-weight: bold 900 italic;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    #whatsapp {
+        grid-area: whatsapp;
+        ul {
+            list-style-type: none;
+        }
+    }
+    #textoSobreMi {
+        grid-area: textoSobreMi;
+        .container {
+            .parrafoDeContenido {
+                text-align: center;
+                line-height: 1.6;
+                color: black;
+            }
+        }
+    }
+    #videoSobreMi {
+        grid-area: videoSobreMi;
+        video {
+            margin: 2% 10% 2% 10%;
+            width: 80%;
+        }
+    }
+    #pieSobreMi {
+        grid-area: pieSobreMi;
+        background-color: $pie;
+        height: auto;
+        .redesSociales {
+            list-style-type: none;
+            margin: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        address {
+            display: flex;
+                margin: 10px;
+        }
+    }
+}
+
+@keyframes logoWhatsapp {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*PRODUCTOS*/
+#promociones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        background-color: $fondo2;
+    }
+    .caracteristicas {
+        .promo {
+            li {
+                text-align: center;
             }
         }
     }
 }
 
-@media (min-width: 481px) and (max-width: 1023px) {
-    #promociones {
+@keyframes logoWhatsapp {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*COMPRAR*/
+#cuerpoComprar {
+    background-color: $fondo1;
+    display: grid;
+    grid-template-areas:
+    "cabezaComprar"
+    "tituloComprar"
+    "whatsapp"
+    "textoComprar"
+    "boton"
+    "subtituloComprar"
+    "listaComprar"
+    "pieComprar";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    .cabecera {
+        grid-area: cabezaComprar;
+        background-color: $fondoCabecera;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        div {
+            ul {
+                list-style-type: none;
+            }
+        }
+        .nav {
+            .menu {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    li {
+                        .listas {
+                            text-decoration: none;
+                            color: $colorLista;
+                            font-family: $fuente;
+                        }
+                    }
+            }
+        }
+    }
+    #tituloComprar {
+        grid-area: tituloComprar;
+        @extend .tituloSeccion;
         display: flex;
         justify-content: center;
-        align-items: center;
-        h3 {
-            background-color: $fondo;
+    }
+    #whatsapp {
+        ul {
+            list-style-type: none;
         }
-        .caracteristicas {
-            .promo {
-                li {
-                    text-align: center;
-                }
-            }
+    }
+    #textoComprar {
+        grid-area: textoComprar;
+        display: flex;
+        justify-content: center;
+        .parrafoComprar {
+            text-align: center;
+            margin: 20px;
+        }
+    }
+    #button {
+        grid-area: boton;
+        display: flex;
+        justify-content: center;
+    }
+    #subtituloComprar {
+        grid-area: subtituloComprar;
+        display: flex;
+        justify-content: center;
+        .subtituloComprar {
+            background-color: $subComprar;
+            text-align: center;
+        }
+    }
+    #listaComprar {
+        grid-area: listaComprar;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        .listaOpcionesPago {
+            text-align: center;
+        }
+    }
+    #pieComprar {
+        background-color: $pie;
+        grid-area: pieComprar;
+        .redesSociales {
+            list-style-type: none;
+            margin: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        address {
+            display: flex;
+            margin: 10px;
         }
     }
 }
 
-@media (max-width: 480px) {
-    #promociones {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h3 {
-            background-color: $fondo;
-        }
-        .caracteristicas {
-            .promo {
-                li {
-                    text-align: center;
-                }
-            }
-        }
+@keyframes logoWhatsapp {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }
 
+/*CONTACTO*/
+
+
+
+@keyframes logoWhatsapp {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

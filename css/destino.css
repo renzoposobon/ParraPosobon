@@ -1,7 +1,44 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap");
 body {
   font-family: "Source Sans Pro", sans-serif; }
 
+/*****INDEX*****/
+@media (min-width: 1024px) {
+  body header div ul li a .logo {
+    width: 150px;
+    margin: 30px;
+    background-color: none; }
+  body header .nav .menu li .listas {
+    background-image: radial-gradient(#99D3E0 15%, salmon 80%);
+    padding: 6px;
+    margin: 20px;
+    font-size: 24px; }
+  body .principal p {
+    font-size: 45px; }
+  body #whatsapp ul li a img {
+    height: 100px;
+    width: 100px; }
+  body .secundario {
+    /*  margin-top: 50px;*/ }
+    body .secundario .parrafoDos {
+      font-size: 60px; }
+  body footer .redesSociales {
+    justify-content: flex-start; }
+  body footer address {
+    justify-content: flex-end; } }
+
+/*****SOBRE MÍ*****/
+@media (min-width: 1024px) {
+  #cuerpoSobreMi #tituloSobreMi .tituloSeccion, #cuerpoSobreMi #tituloSobreMi #cuerpoComprar #tituloComprar, #cuerpoComprar #cuerpoSobreMi #tituloSobreMi #tituloComprar {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  #cuerpoSobreMi #textoSobreMi .container .parrafoDeContenido {
+    font-size: 20px;
+    margin: 25px; } }
+
+/*****PRODUCTOS*****/
 @media (min-width: 1024px) {
   #promociones h3 {
     font-size: 45px; }
@@ -38,6 +75,29 @@ body {
   #promociones div p {
     font-size: 20px !important; } }
 
+/*****COMPRAR*****/
+@media (min-width: 1024px) {
+  #cuerpoComprar #tituloComprar .tituloSeccion, #cuerpoComprar #tituloComprar #tituloComprar {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  #cuerpoComprar #textoComprar .parrafoComprar {
+    font-size: 35px;
+    width: 700px;
+    height: auto; }
+  #cuerpoComprar #subtituloComprar .subtituloComprar {
+    font-size: 45px;
+    margin: 30px;
+    width: 520px; }
+  #cuerpoComprar #listaComprar {
+    margin: 30px; }
+    #cuerpoComprar #listaComprar .listaOpcionesPago {
+      font-size: 35px;
+      width: 600px;
+      height: auto;
+      padding: 10px; } }
+
+/*****CONTACTO*****/
 /*extend*/
 .promo, .divPrecio .promo--Precio, div .parrafoCaracteristicas {
   text-decoration: underline; }
@@ -49,7 +109,7 @@ div .parrafoCaracteristicas {
   color: #521e18; }
 
 /*mixin*/
-.tituloSeccion {
+.tituloSeccion, #cuerpoComprar #tituloComprar {
   line-height: 2;
   text-decoration: underline wavy red; }
 
@@ -59,32 +119,259 @@ div .parrafoCaracteristicas {
         border: $bgcolor;*/
   text-decoration: underline dotted #FF3028; }
 
-@media (min-width: 1024px) {
-  #promociones {
+/*INDEX*/
+#cuerpoIndex {
+  background-color: #f0c0f1;
+  display: grid;
+  grid-template-areas: "cabeza" "whatsapp" "principal" "galeria" "secundario" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; }
+  #cuerpoIndex #cabeza {
+    background-color: salmon;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    grid-area: cabeza; }
+    #cuerpoIndex #cabeza div ul {
+      list-style-type: none; }
+    #cuerpoIndex #cabeza .nav .menu {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      #cuerpoIndex #cabeza .nav .menu li .listas {
+        text-decoration: none;
+        color: black;
+        font-family: "Source Sans Pro", sans-serif; }
+  #cuerpoIndex .principal {
+    grid-area: principal;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    #promociones h3 {
-      background-color: sandybrown; }
-    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
-      text-align: center; } }
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%; }
+    #cuerpoIndex .principal p {
+      font-family: "Source Sans Pro", sans-serif;
+      text-align: center;
+      font-weight: bold 900 italic;
+      line-height: 1.6; }
+  #cuerpoIndex #whatsapp {
+    animation-name: logoWhatsapp;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    grid-area: whatsapp; }
+    #cuerpoIndex #whatsapp ul {
+      list-style-type: none; }
+      #cuerpoIndex #whatsapp ul li a img {
+        z-index: 1;
+        position: fixed; }
+  #cuerpoIndex #carouselExampleIndicators {
+    grid-area: galeria; }
+    #cuerpoIndex #carouselExampleIndicators .carousel-inner {
+      width: 100%;
+      height: auto; }
+  #cuerpoIndex .secundario {
+    grid-area: secundario; }
+    #cuerpoIndex .secundario .parrafoDos {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #cuerpoIndex .secundario .sub {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  #cuerpoIndex footer {
+    grid-area: pie;
+    background-color: #b39f9f;
+    height: auto; }
+    #cuerpoIndex footer .redesSociales {
+      list-style-type: none;
+      margin: 30px;
+      padding: 10px;
+      display: flex;
+      align-items: center; }
+    #cuerpoIndex footer address {
+      display: flex;
+      margin: 10px; }
 
-@media (min-width: 481px) and (max-width: 1023px) {
-  #promociones {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    #promociones h3 {
-      background-color: sandybrown; }
-    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
-      text-align: center; } }
+@keyframes logoWhatsapp {
+  from {
+    transform: translateX(-300px); }
+  to {
+    transform: translateX(0); } }
 
-@media (max-width: 480px) {
-  #promociones {
+/*SOBRE MI*/
+#cuerpoSobreMi {
+  background-color: #f0c0f1;
+  display: grid;
+  grid-template-areas: "cabezaSobreMi" "tituloSobreMi" "whatsapp" "textoSobreMi" "videoSobreMi" "pieSobreMi";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; }
+  #cuerpoSobreMi #cabezaSobreMi {
+    grid-area: cabezaSobreMi;
+    background-color: salmon;
     display: flex;
-    justify-content: center;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: center;
     align-items: center; }
-    #promociones h3 {
-      background-color: sandybrown; }
-    #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
-      text-align: center; } }
+    #cuerpoSobreMi #cabezaSobreMi div ul {
+      list-style-type: none; }
+    #cuerpoSobreMi #cabezaSobreMi .nav .menu {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      #cuerpoSobreMi #cabezaSobreMi .nav .menu li .listas {
+        text-decoration: none;
+        color: black;
+        font-family: "Source Sans Pro", sans-serif; }
+  #cuerpoSobreMi #tituloSobreMi {
+    grid-area: tituloSobreMi; }
+    #cuerpoSobreMi #tituloSobreMi .tituloSeccion, #cuerpoSobreMi #tituloSobreMi #cuerpoComprar #tituloComprar, #cuerpoComprar #cuerpoSobreMi #tituloSobreMi #tituloComprar {
+      text-align: center;
+      font-weight: bold 900 italic;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center; }
+  #cuerpoSobreMi #whatsapp {
+    grid-area: whatsapp; }
+    #cuerpoSobreMi #whatsapp ul {
+      list-style-type: none; }
+  #cuerpoSobreMi #textoSobreMi {
+    grid-area: textoSobreMi; }
+    #cuerpoSobreMi #textoSobreMi .container .parrafoDeContenido {
+      text-align: center;
+      line-height: 1.6;
+      color: black; }
+  #cuerpoSobreMi #videoSobreMi {
+    grid-area: videoSobreMi; }
+    #cuerpoSobreMi #videoSobreMi video {
+      margin: 2% 10% 2% 10%;
+      width: 80%; }
+  #cuerpoSobreMi #pieSobreMi {
+    grid-area: pieSobreMi;
+    background-color: #b39f9f;
+    height: auto; }
+    #cuerpoSobreMi #pieSobreMi .redesSociales {
+      list-style-type: none;
+      margin: 30px;
+      padding: 10px;
+      display: flex;
+      align-items: center; }
+    #cuerpoSobreMi #pieSobreMi address {
+      display: flex;
+      margin: 10px; }
+
+@keyframes logoWhatsapp {
+  from {
+    transform: translateX(-300px); }
+  to {
+    transform: translateX(0); } }
+
+/*PRODUCTOS*/
+#promociones {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #promociones h3 {
+    background-color: sandybrown; }
+  #promociones .caracteristicas .promo li, #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #promociones .caracteristicas .promo--Precio li, #promociones .caracteristicas div .parrafoCaracteristicas li, div #promociones .caracteristicas .parrafoCaracteristicas li {
+    text-align: center; }
+
+@keyframes logoWhatsapp {
+  from {
+    transform: translateX(-300px); }
+  to {
+    transform: translateX(0); } }
+
+/*COMPRAR*/
+#cuerpoComprar {
+  background-color: #f0c0f1;
+  display: grid;
+  grid-template-areas: "cabezaComprar" "tituloComprar" "whatsapp" "textoComprar" "boton" "subtituloComprar" "listaComprar" "pieComprar";
+  grid-template-columns: 100%;
+  grid-template-rows: auto; }
+  #cuerpoComprar .cabecera {
+    grid-area: cabezaComprar;
+    background-color: salmon;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center; }
+    #cuerpoComprar .cabecera div ul {
+      list-style-type: none; }
+    #cuerpoComprar .cabecera .nav .menu {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      #cuerpoComprar .cabecera .nav .menu li .listas {
+        text-decoration: none;
+        color: black;
+        font-family: "Source Sans Pro", sans-serif; }
+  #cuerpoComprar #tituloComprar {
+    grid-area: tituloComprar;
+    display: flex;
+    justify-content: center; }
+  #cuerpoComprar #whatsapp ul {
+    list-style-type: none; }
+  #cuerpoComprar #textoComprar {
+    grid-area: textoComprar;
+    display: flex;
+    justify-content: center; }
+    #cuerpoComprar #textoComprar .parrafoComprar {
+      text-align: center;
+      margin: 20px; }
+  #cuerpoComprar #button {
+    grid-area: boton;
+    display: flex;
+    justify-content: center; }
+  #cuerpoComprar #subtituloComprar {
+    grid-area: subtituloComprar;
+    display: flex;
+    justify-content: center; }
+    #cuerpoComprar #subtituloComprar .subtituloComprar {
+      background-color: #70e0ad;
+      text-align: center; }
+  #cuerpoComprar #listaComprar {
+    grid-area: listaComprar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none; }
+    #cuerpoComprar #listaComprar .listaOpcionesPago {
+      text-align: center; }
+  #cuerpoComprar #pieComprar {
+    background-color: #b39f9f;
+    grid-area: pieComprar; }
+    #cuerpoComprar #pieComprar .redesSociales {
+      list-style-type: none;
+      margin: 30px;
+      padding: 10px;
+      display: flex;
+      align-items: center; }
+    #cuerpoComprar #pieComprar address {
+      display: flex;
+      margin: 10px; }
+
+@keyframes logoWhatsapp {
+  from {
+    transform: translateX(-300px); }
+  to {
+    transform: translateX(0); } }
+
+/*CONTACTO*/
+@keyframes logoWhatsapp {
+  from {
+    transform: translateX(-300px); }
+  to {
+    transform: translateX(0); } }
