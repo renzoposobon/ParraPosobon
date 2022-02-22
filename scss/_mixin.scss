@@ -22,6 +22,7 @@
     margin-bottom: 30px;
 }
 
+
 @mixin whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -46,7 +47,4 @@
 @mixin subComprarDesktop {
     background-color: $subComprar;
     text-align: center;
-    font-size: 45px;
-    margin: 30px;
-    width: 520px;
 }

@@ -46,6 +46,13 @@
                 }
         }
         .secundario {
+            .sub {
+                .subtituloComprar {
+                    font-size: 45px;
+                    margin: 30px;
+                    width: 520px;
+                }
+            }
             .parrafoDos {
                 font-size: 60px;
             }
@@ -73,7 +80,86 @@
 }
 //TABLET
 @media (min-width: 481px) and (max-width: 1023px) {
-
+    body {
+        header {
+            background-image: linear-gradient(rgb(253, 114, 99) 0%, #f0c0f1 75%);
+            flex-direction: column;
+            div {
+                ul {
+                    li {
+                        a {
+                            .logo {
+                                width: 150px;
+                                margin: 30px;
+                                background-color: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav {
+                .menu {
+                    li {
+                        .listas {
+                            background-image: radial-gradient(#99D3E0 15%, salmon 80%);
+                            padding: 5px;
+                            margin: 5px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .principal {
+            p {
+                font-size: 45px;
+            }
+        }
+        #whatsapp {
+                ul {
+                    li {
+                        a {
+                            img {
+                                height: 80px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+        }
+        .secundario {
+            margin-top: 50px;
+            .sub {
+                .subtituloComprar {
+                    font-size: 35px;
+                    margin: 30px;
+                    width: 520px;
+                }
+            }
+            .parrafoDos {
+                font-size: 40px;
+            }
+            .opcionesPagoI {
+                display: flex;
+                flex-direction: row;
+                .listaOpcionesPagoI {
+                    font-size: 35px;
+                    padding: 2%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        footer {
+   
+            .redesSociales {
+                justify-content: flex-start;
+            }
+            address {
+                justify-content: flex-end;
+            }
+        }
+    }
 }
 //DESKTOP
 @media (max-width: 480px) {

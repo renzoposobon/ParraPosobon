@@ -547,17 +547,18 @@ address {
 
 /****TABLET****/
 @media (min-width: 481px) and (max-width: 1023px) {
-/*CUERPO*/
+/*
+/*CUERPO*
 .body {
     background-color: #f0c0f1;
 }
-/*LOGO*/
+/*LOGO*
 .logo {
     width: 120px;
     margin: 20px;
 }
 
-/*MENÚ*/
+/*MENÚ*
 ul {
     list-style: none;
     margin-bottom: 15px;
@@ -582,7 +583,7 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
 }
-        
+      
 .cabecera {
     background-color: salmon;
     display: flex;
@@ -593,9 +594,10 @@ a {
     align-items: center;
     background-image: linear-gradient(rgb(253, 114, 99) 0%, #f0c0f1 75%);
 }
- 
+ */
     /*PRINCIPAL*/
         /*TEXTO DE APERTURA*/
+/*
 p {
     font-size: 45px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -647,14 +649,15 @@ img.whatsapp {
     width: 90%;
     height: auto;
     border: black solid;
-}*/
+}
 .carousel-inner {
     width: 100%;
     height: auto;
 }
-
+*/
 
         /*PÁRRAFO ABAJO*/
+/*
 .parrafoDos {
     font-size: 40px;
 } 
@@ -674,8 +677,9 @@ img.whatsapp {
     justify-content: center;
     align-items: center;
 }
-
+*/
 /***GRID AREA INDEX***/
+/*
 #cuerpoIndex {
     display: grid;
     grid-template-areas: 
@@ -686,9 +690,7 @@ img.whatsapp {
     "secundario"
     "pie";
     grid-template-columns: 100%;
-   /* grid-template-rows: 210px 4% auto 5% 200px;*/
-   /* grid-template-rows: 210px 4% auto auto 200px;*/
-   grid-template-rows: auto;
+    grid-template-rows: auto;
 }
 
 #cabeza {
@@ -707,10 +709,7 @@ img.whatsapp {
     margin-left: 10%;
     margin-right: 10%;
 }
-/*
-#galeria {
-    grid-area: galeria;
-}*/
+
 #carouselExampleIndicators {
     grid-area: galeria;
 }
@@ -724,7 +723,7 @@ img.whatsapp {
     grid-area: pie;
 }
 
-
+*/
 /*INICIO SOBRE MÍ*/
 .parrafoDeContenido {
     font-size: 20px;

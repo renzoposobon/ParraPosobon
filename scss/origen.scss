@@ -409,7 +409,9 @@ $subComprar: #70e0ad;
     }
     #tituloComprar {
         grid-area: tituloComprar;
-        @include tituloDesktop;
+        .tituloSeccion {
+            @include tituloDesktop;
+        }
     }
     #whatsapp {
         @include whatsapp;
