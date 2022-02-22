@@ -46,9 +46,18 @@
                 }
         }
         .secundario {
-          /*  margin-top: 50px;*/
             .parrafoDos {
                 font-size: 60px;
+            }
+            .opcionesPagoI {
+                display: flex;
+                flex-direction: row;
+                .listaOpcionesPagoI {
+                    font-size: 35px;
+                    padding: 2%;
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
         footer {
@@ -105,28 +114,30 @@
 
 //DESKTOP
 @media (min-width: 1024px) {
-    #promociones {
-        h3 {
-            font-size: 45px;
-        }
-        .caracteristicas {
-            ul {
-                margin: 30px;
-                li {
-                    font-size: 30px;
+    #cuerpoProductos {
+        #promociones {
+            h3 {
+                font-size: 45px;
+            }
+            .caracteristicas {
+                ul {
+                    margin: 30px;
+                    li {
+                        font-size: 30px;
+                    }
                 }
             }
-        }
-        div {
-            ul {
-                li {
-                    font-size: 35px;
+            div {
+                ul {
+                    li {
+                        font-size: 35px;
+                    }
                 }
             }
-        }
-        div {
-            p {
-                font-size: 30px !important;
+            div {
+                p {
+                    font-size: 30px !important;
+                }
             }
         }
     }
@@ -208,13 +219,6 @@
                 height: auto;
             }
         }
-        #subtituloComprar {
-            .subtituloComprar {
-                font-size: 45px;
-                margin: 30px;
-                width: 520px;
-            }
-        }
         #listaComprar {
             margin: 30px;
             .listaOpcionesPago {
@@ -238,7 +242,41 @@
 /*****CONTACTO*****/
 //DESKTOP
 @media (min-width: 1024px) {
-
+    #cuerpoContacto {
+        #parrafoContacto {
+            margin-left: 5%;
+            margin-right: 5%;
+            .parrafoContacto {
+                font-size: 35px;
+            }
+        }
+        #formulario {
+            margin: 20px;
+            fieldset {
+                width: 700px;
+                padding: 20px;
+                legend {
+                    font-size: 25px;
+                }
+            }
+            h4 {
+                font-size: 30px;
+                margin: 10px;
+            }
+            label {
+                font-size: 25px;
+            }
+            input {
+                font-size: 25px;
+                margin: 3px;
+            }
+            textarea {
+                font-size: 25px;
+                width: 600px;
+                margin: 3px;
+            }
+        }
+    }
 }
 //TABLET
 @media (min-width: 481px) and (max-width: 1023px) {

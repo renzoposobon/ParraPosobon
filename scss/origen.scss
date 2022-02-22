@@ -72,23 +72,7 @@ $subComprar: #70e0ad;
         }
     }
     #whatsapp {
-        animation-name: logoWhatsapp;
-        animation-iteration-count: initial;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
-        animation-delay: 1s;
-        grid-area: whatsapp;
-        ul {
-            list-style-type: none;
-            li {
-                a {
-                    img {
-                        z-index: 1;
-                        position: fixed;
-                    }
-                }
-            }
-        }
+        @include whatsapp;
     }
     #carouselExampleIndicators {
         grid-area: galeria;
@@ -108,6 +92,9 @@ $subComprar: #70e0ad;
             display: flex;
             justify-content: center;
             align-items: center;
+            .subtituloComprar {
+                @include subComprarDesktop;
+            }
         }
     }
     footer {
@@ -184,18 +171,11 @@ $subComprar: #70e0ad;
     #tituloSobreMi {
         grid-area: tituloSobreMi;
         .tituloSeccion {
-            text-align: center;
-            font-weight: bold 900 italic;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
+            @include tituloDesktop;
         }
     }
     #whatsapp {
-        grid-area: whatsapp;
-        ul {
-            list-style-type: none;
-        }
+        @include whatsapp;
     }
     #textoSobreMi {
         grid-area: textoSobreMi;
@@ -243,18 +223,131 @@ $subComprar: #70e0ad;
 }
 
 /*PRODUCTOS*/
-#promociones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h3 {
-        background-color: $fondo2;
+#cuerpoProductos {
+    background-color: $fondo1;
+        display: grid;
+    grid-template-areas:
+    "cabezaProductos"
+    "tituloProductos"
+    "whatsapp"
+    "catalogo"
+    "icono"
+    "promociones"
+    "pieProductos";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    #cabezaProductos {
+        grid-area: cabezaProductos;
+        background-color: $fondoCabecera;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        div {
+            ul {
+                list-style-type: none;
+            }
+        }
+        .nav {
+            .menu {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    li {
+                        .listas {
+                            text-decoration: none;
+                            color: $colorLista;
+                            font-family: $fuente;
+                        }
+                    }
+            }
+        }
     }
-    .caracteristicas {
-        .promo {
-            li {
+    #tituloProductos {
+        grid-area: tituloProductos;
+        .tituloSeccion {
+            @include tituloDesktop;
+        }
+    }
+    #whatsapp {
+        @include whatsapp;
+    }
+    #catalogo {
+        grid-area: catalogo;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .productos {
+            width: 350px;
+            height: auto;
+            margin: 30px;
+            border: black solid;
+            .tituloProductos {
+                font-size: 35px;
+                font-family: 'Source Sans Pro', sans-serif;
+                text-align: center;
+                width: 300px;
+                margin-left: 30px;
+            }
+            .parrafoDeProductos {
+                font-size: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                width: 300px;
+                height: auto;
+                text-align: center;
+                margin-left: 17px;
+            }
+        }
+    }
+    #icono {
+        grid-area: icono;
+        margin: 0 3% 0 3%;
+    }
+    #promociones {
+        grid-area: promociones;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            background-color: $fondo2;
+        }
+        .caracteristicas {
+            .promo {
+                list-style-type: none;
+                li {
+                    text-align: center;
+                }
+            }
+        }
+        .divPrecio {
+            .promo--Precio {
+                list-style-type: none;
+            }
+        }
+        div {
+            .parrafoCaracteristicas {
                 text-align: center;
             }
+        }
+    }
+    #pieProductos {
+        grid-area: pieProductos;
+        background-color: $pie;
+        height: auto;
+        .redesSociales {
+            list-style-type: none;
+            margin: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        address {
+            display: flex;
+            margin: 10px;
         }
     }
 }
@@ -316,14 +409,10 @@ $subComprar: #70e0ad;
     }
     #tituloComprar {
         grid-area: tituloComprar;
-        @extend .tituloSeccion;
-        display: flex;
-        justify-content: center;
+        @include tituloDesktop;
     }
     #whatsapp {
-        ul {
-            list-style-type: none;
-        }
+        @include whatsapp;
     }
     #textoComprar {
         grid-area: textoComprar;
@@ -344,8 +433,7 @@ $subComprar: #70e0ad;
         display: flex;
         justify-content: center;
         .subtituloComprar {
-            background-color: $subComprar;
-            text-align: center;
+            @include subComprarDesktop;
         }
     }
     #listaComprar {
@@ -386,7 +474,101 @@ $subComprar: #70e0ad;
 }
 
 /*CONTACTO*/
-
+#cuerpoContacto {
+    background-color: $fondo1;
+    display: grid;
+    grid-template-areas:
+    "cabezaContacto"
+    "tituloContacto"
+    "whatsapp"
+    "parrafoContacto"
+    "formulario"
+    "pieContacto"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    .cabecera {
+        grid-area: cabezaContacto;
+        background-color: $fondoCabecera;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        div {
+            ul {
+                list-style-type: none;
+            }
+        }
+        .nav {
+            .menu {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    li {
+                        .listas {
+                            text-decoration: none;
+                            color: $colorLista;
+                            font-family: $fuente;
+                        }
+                    }
+            }
+        }
+    }
+    #tituloContacto {
+        grid-area: tituloContacto;
+        .tituloSeccion {
+                    @include tituloDesktop;
+        }
+    }
+    #whatsapp {
+        @include whatsapp;
+    }
+    #parrafoContacto {
+        grid-area: parrafoContacto;
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        .parrafoContacto {
+            font-size: 35px;
+            text-align: center;
+        }
+    }
+    #formulario {
+        grid-area: formulario;
+        display: flex;
+        justify-content: center;
+        fieldset {
+            legend {
+                text-align: center;
+            }
+        }
+        h4 {
+            font-weight: bold;
+        }
+        input {
+            text-align: center;
+        }
+    }
+    #pieContacto {
+        grid-area: pieContacto;
+        background-color: $pie;
+        .redesSociales {
+            list-style-type: none;
+            margin: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        address {
+            display: flex;
+            margin: 10px;
+        }
+    }
+}
 
 
 @keyframes logoWhatsapp {

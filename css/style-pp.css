@@ -240,6 +240,7 @@ video {
 /*FIN SOBRE MÍ*/
 
 /*INICIO PRODUCTOS*/
+/*
 .parrafoDeProductos {
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -264,19 +265,14 @@ video {
     border: black solid;
 }
 
-
-.principalProductos {
-    width: auto;
-    height: auto;
-}
-
 .catalogo {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+*/
 /***GRID AREA PRODUCTOS***/
+/*
 #cuerpoProductos {
     display: grid;
     grid-template-areas:
@@ -288,7 +284,6 @@ video {
     "promociones"
     "pieProductos";
     grid-template-columns: 100%;
-    /*grid-template-rows: 210px 4% auto 200px;*/
     grid-template-rows: auto;
 }
 
@@ -321,7 +316,7 @@ video {
 #pieProductos {
     grid-area: pieProductos;
 }
-
+*/
 /*FIN PRODUCTOS*/
 
 /*INICIO COMPRAR*/
@@ -419,6 +414,7 @@ video {
 /***FIN COMPRAR***/
 
 /***INICIO CONTACTO***/
+/*
 .parrafoContacto {
     font-size: 35px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -463,6 +459,7 @@ textarea {
 }
 
 /***GRID AREA CONTACTO***/
+/*
 #cuerpoContacto {
     display: grid;
     grid-template-areas:
@@ -503,9 +500,9 @@ textarea {
 #pieContacto {
     grid-area: pieContacto;
 }
-
+*/
 /***FIN CONTACTO***/
-
+/*
 .opcionesPagoI {
     display: flex;
     flex-direction: row;
@@ -517,7 +514,7 @@ textarea {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 2%
 }
-
+*/
     /*PIE DE PÁGINA*/
     /*
 footer {

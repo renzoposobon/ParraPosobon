@@ -1,10 +1,52 @@
+@import "colores";
+
 /*mixin*/
 
 @mixin caracteristicas {
     line-height: 2;
-    text-decoration: underline wavy red;
+    text-decoration: underline wavy red none;
 }
 
 .tituloSeccion {
     @include caracteristicas;
+}
+
+@mixin tituloDesktop {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+@mixin whatsapp {
+    grid-area: whatsapp;
+    animation-name: logoWhatsapp;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    grid-area: whatsapp;
+    ul {
+        list-style-type: none;
+        li {
+            a {
+                img {
+                    z-index: 1;
+                    position: fixed;
+                }
+            }
+        }
+    }
+}
+
+@mixin subComprarDesktop {
+    background-color: $subComprar;
+    text-align: center;
+    font-size: 45px;
+    margin: 30px;
+    width: 520px;
 }
