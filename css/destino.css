@@ -80,12 +80,20 @@ body {
 /*****SOBRE MÍ*****/
 @media (min-width: 1024px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
-    font-size: 60px;
-    margin-top: 40px;
-    margin-bottom: 30px; }
+    font-size: 54px; }
   #cuerpoSobreMi #textoSobreMi .container .parrafoDeContenido {
     font-size: 20px;
     margin: 25px; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
+    font-size: 54px; }
+  #cuerpoSobreMi #textoSobreMi {
+    font-size: 20px;
+    margin: 25px; }
+  #cuerpoSobreMi #videoSobreMi {
+    margin: 2% 10% 2% 10%;
+    width: 80%; } }
 
 /*****PRODUCTOS*****/
 @media (min-width: 1024px) {
@@ -314,10 +322,7 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center;
-      font-size: 60px;
-      margin-top: 40px;
-      margin-bottom: 30px; }
+      justify-content: center; }
   #cuerpoSobreMi #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -396,10 +401,7 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center;
-      font-size: 60px;
-      margin-top: 40px;
-      margin-bottom: 30px; }
+      justify-content: center; }
   #cuerpoProductos #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -509,10 +511,7 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center;
-      font-size: 60px;
-      margin-top: 40px;
-      margin-bottom: 30px; }
+      justify-content: center; }
   #cuerpoComprar #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -605,10 +604,7 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center;
-      font-size: 60px;
-      margin-top: 40px;
-      margin-bottom: 30px; }
+      justify-content: center; }
   #cuerpoContacto #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
