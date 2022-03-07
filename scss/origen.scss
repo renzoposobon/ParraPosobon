@@ -27,35 +27,9 @@ $subComprar: #70e0ad;
     "pie";
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    #cabeza {
-        background-color: $fondoCabecera;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-        grid-area: cabeza;
-        div {
-            ul {
-                list-style-type: none;
-            }
-        }
-        .nav {
-            .menu {
-                    list-style-type: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                    li {
-                        .listas {
-                            text-decoration: none;
-                            color: $colorLista;
-                            font-family: $fuente;
-                        }
-                    }
-            }
-        }
+    header {
+        font-weight: 400;
+        font-size: 24px;
     }
     .principal {
         grid-area: principal;
@@ -67,8 +41,9 @@ $subComprar: #70e0ad;
         p {
             font-family: $fuente;
             text-align: center;
-            font-weight: bold 900 italic;
+            font-weight: bold;
             line-height: 1.6;
+            text-transform: uppercase;
         }
     }
     #whatsapp {
@@ -87,6 +62,7 @@ $subComprar: #70e0ad;
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
         .sub {
             display: flex;
@@ -140,33 +116,8 @@ $subComprar: #70e0ad;
     grid-template-rows: auto;
     #cabezaSobreMi {
         grid-area: cabezaSobreMi;
-        background-color: $fondoCabecera;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-        div {
-            ul {
-                list-style-type: none;
-            }
-        }
-        .nav {
-            .menu {
-                    list-style-type: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                    li {
-                        .listas {
-                            text-decoration: none;
-                            color: $colorLista;
-                            font-family: $fuente;
-                        }
-                    }
-            }
-        }
+        font-weight: 400;
+        font-size: 24px;
     }
     #tituloSobreMi {
         grid-area: tituloSobreMi;
@@ -179,12 +130,11 @@ $subComprar: #70e0ad;
     }
     #textoSobreMi {
         grid-area: textoSobreMi;
-        .container {
-            .parrafoDeContenido {
-                text-align: center;
-                line-height: 1.6;
-                color: black;
-            }
+        .parrafoDeContenido {
+            text-align: center;
+            line-height: 1.6;
+            color: black;
+            margin: 0 10% 3% 10%;
         }
     }
     #videoSobreMi {
@@ -238,33 +188,8 @@ $subComprar: #70e0ad;
     grid-template-rows: auto;
     #cabezaProductos {
         grid-area: cabezaProductos;
-        background-color: $fondoCabecera;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-        div {
-            ul {
-                list-style-type: none;
-            }
-        }
-        .nav {
-            .menu {
-                    list-style-type: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                    li {
-                        .listas {
-                            text-decoration: none;
-                            color: $colorLista;
-                            font-family: $fuente;
-                        }
-                    }
-            }
-        }
+        font-weight: 400;
+        font-size: 24px;
     }
     #tituloProductos {
         grid-area: tituloProductos;
@@ -379,33 +304,8 @@ $subComprar: #70e0ad;
     grid-template-rows: auto;
     .cabecera {
         grid-area: cabezaComprar;
-        background-color: $fondoCabecera;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-        div {
-            ul {
-                list-style-type: none;
-            }
-        }
-        .nav {
-            .menu {
-                    list-style-type: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                    li {
-                        .listas {
-                            text-decoration: none;
-                            color: $colorLista;
-                            font-family: $fuente;
-                        }
-                    }
-            }
-        }
+        font-weight: 400;
+        font-size: 24px;
     }
     #tituloComprar {
         grid-area: tituloComprar;
@@ -429,6 +329,7 @@ $subComprar: #70e0ad;
         grid-area: boton;
         display: flex;
         justify-content: center;
+        margin: 3%;
     }
     #subtituloComprar {
         grid-area: subtituloComprar;
@@ -446,6 +347,8 @@ $subComprar: #70e0ad;
         list-style-type: none;
         .listaOpcionesPago {
             text-align: center;
+            width: auto;
+            height: auto;
         }
     }
     #pieComprar {
@@ -491,38 +394,13 @@ $subComprar: #70e0ad;
     grid-template-rows: auto;
     .cabecera {
         grid-area: cabezaContacto;
-        background-color: $fondoCabecera;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-evenly;
-        align-content: center;
-        align-items: center;
-        div {
-            ul {
-                list-style-type: none;
-            }
-        }
-        .nav {
-            .menu {
-                    list-style-type: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-content: center;
-                    li {
-                        .listas {
-                            text-decoration: none;
-                            color: $colorLista;
-                            font-family: $fuente;
-                        }
-                    }
-            }
-        }
+        font-weight: 400;
+        font-size: 24px;
     }
     #tituloContacto {
         grid-area: tituloContacto;
         .tituloSeccion {
-                    @include tituloDesktop;
+            @include tituloDesktop;
         }
     }
     #whatsapp {
@@ -535,7 +413,6 @@ $subComprar: #70e0ad;
         margin-left: 5%;
         margin-right: 5%;
         .parrafoContacto {
-            font-size: 35px;
             text-align: center;
         }
     }

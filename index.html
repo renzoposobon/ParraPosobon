@@ -17,31 +17,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="body" id="cuerpoIndex">
-    <!--INICIO ENCABEZADO-->
     <header class="cabecera" id="cabeza">
-        <!--LOGO-->
-        <div>
-            <ul>
-                <li>
-                    <a href="./index.html" target="blank">
-                        <img src="./assets-img/icono-1.jpeg" alt="logo" class="logo">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!--INICIO NAVEGADOR-->
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="index.html" target="blank" class="listas">Inicio</a></li>
-                <li><a href="./Paginas/sobre-mi.html" target="blank" class="listas">Sobre mí</a></li>
-                <li><a href="./Paginas/productos.html" target="blank" class="listas">Productos</a></li>
-                <li><a href="./Paginas/comprar.html" target="blank" class="listas">Comprar</a></li>
-                <li><a href="./Paginas/contacto.html" target="blank" class="listas">Contacto</a></li>
-            </ul>
-        </nav>
-        <!--FIN NAVEGADOR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets-img/logo-nuevo-recortado.png" alt="" width="120" height="110">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Paginas/sobre-mi.html">Sobre Mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Paginas/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Paginas/comprar.html">Comprar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
-    <!--FIN ENCABEZADO-->
     <hr>
     <!--TEXTO DE APERTURA-->
     <section class="principal">

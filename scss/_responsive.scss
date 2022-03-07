@@ -1,33 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 /*****INDEX*****/
 @media (min-width: 1024px) {
     body {
-        header {
-            div {
-                ul {
-                    li {
-                        a {
-                            .logo {
-                                width: 150px;
-                                margin: 30px;
-                                background-color: none;
-                            }
-                        }
-                    }
-                }
-            }
-            .nav {
-                .menu {
-                    li {
-                        .listas {
-                            background-image: radial-gradient(#99D3E0 15%, salmon 80%);
-                            padding: 6px;
-                            margin: 20px;
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
-        }
         .principal {
             p {
                 font-size: 45px;
@@ -81,38 +59,10 @@
 //TABLET
 @media (min-width: 481px) and (max-width: 1023px) {
     body {
-        header {
-            background-image: linear-gradient(rgb(253, 114, 99) 0%, #f0c0f1 75%);
-            flex-direction: column;
-            div {
-                ul {
-                    li {
-                        a {
-                            .logo {
-                                width: 150px;
-                                margin: 30px;
-                                background-color: none;
-                            }
-                        }
-                    }
-                }
-            }
-            .nav {
-                .menu {
-                    li {
-                        .listas {
-                            background-image: radial-gradient(#99D3E0 15%, salmon 80%);
-                            padding: 5px;
-                            margin: 5px;
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
-        }
         .principal {
             p {
-                font-size: 45px;
+                font-size: 42px;
+                font-weight: bold;
             }
         }
         #whatsapp {
@@ -141,7 +91,7 @@
             }
             .opcionesPagoI {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 .listaOpcionesPagoI {
                     font-size: 35px;
                     padding: 2%;
@@ -151,19 +101,78 @@
             }
         }
         footer {
-   
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .redesSociales {
-                justify-content: flex-start;
+                display: flex;
+                justify-content: center;
             }
             address {
-                justify-content: flex-end;
+                display: flex;
+                justify-content: center;
             }
         }
     }
 }
-//DESKTOP
+//SMARTPHONE
 @media (max-width: 480px) {
-
+    body {
+        .principal {
+            p {
+                font-size: 36px;
+                font-weight: bold;
+            }
+        }
+        #whatsapp {
+                ul {
+                    li {
+                        a {
+                            img {
+                                height: 60px;
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
+        }
+        .secundario {
+            margin-top: 50px;
+            .sub {
+                .subtituloComprar {
+                    font-size: 35px;
+                    margin: 30px;
+                    width: 520px;
+                }
+            }
+            .parrafoDos {
+                font-size: 34px;
+            }
+            .opcionesPagoI {
+                display: flex;
+                flex-direction: column;
+                .listaOpcionesPagoI {
+                    font-size: 28px;
+                    padding: 2%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }
 
 /*****SOBRE MÍ*****/
@@ -176,11 +185,8 @@
             }
         }
         #textoSobreMi {
-            .container {
-                .parrafoDeContenido {
-                    font-size: 20px;
-                    margin: 25px;
-                }
+            .parrafoDeContenido {
+                font-size: 32px;
             }
         }
     }
@@ -194,18 +200,52 @@
             }
         }
         #textoSobreMi {
-            font-size: 20px;
-            margin: 25px;
+            .parrafoDeContenido {
+                font-size: 20px;
+            }
         }
-        #videoSobreMi {
-            margin: 2% 10% 2% 10%;
-            width: 80%;
+        #pieSobreMi {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 }
 //SMARTPHONE
 @media (max-width: 480px) {
-
+    #cuerpoSobreMi {
+        #tituloSobreMi {
+            .tituloSeccion {
+                font-size: 40px;
+            }
+        }
+        #textoSobreMi {
+            .parrafoDeContenido {
+                font-size: 18px;
+            }
+        }
+        #pieSobreMi {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }
 
 /*****PRODUCTOS*****/
@@ -243,6 +283,12 @@
 
 //TABLET
 @media (min-width: 481px) and (max-width: 1023px) {
+#cuerpoProductos {
+    #tituloProductos {
+        .tituloSeccion {
+            font-size: 54px;
+        }
+    }
     #promociones {
         h3 {
             font-size: 40px;
@@ -268,10 +314,30 @@
             }
         }
     }
+    #pieProductos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .redesSociales {
+            display: flex;
+            justify-content: center;
+        }
+        address {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
 }
 
 //SMARTPHONE
 @media (max-width: 480px) {
+#cuerpoProductos {
+    #tituloProductos {
+        .tituloSeccion {
+            font-size: 40px;
+        }
+    }
     #promociones {
         h3 {
             font-size: 30px;
@@ -297,6 +363,20 @@
             }
         }
     }
+    #pieProductos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .redesSociales {
+        display: flex;
+        justify-content: center;
+    }
+    address {
+        display: flex;
+           justify-content: center;
+    }
+}
+}
 }
 
 /*****COMPRAR*****/
@@ -321,8 +401,6 @@
             margin: 30px;
             .listaOpcionesPago {
                 font-size: 35px;
-                width: 600px;
-                height: auto;
                 padding: 10px;
             }
         }
@@ -330,11 +408,91 @@
 }
 //TABLET
 @media (min-width: 481px) and (max-width: 1023px) {
-
+    #cuerpoComprar {
+        #tituloComprar {
+            .tituloSeccion {
+                font-size: 54px;
+            }
+        }
+        #textoComprar {
+            margin: 0 10% 5% 10%;
+            .parrafoComprar {
+                font-size: 30px;
+            }
+        }
+        #subtituloComprar {
+            .subtituloComprar {
+                font-size: 35px;
+                margin: 30px;
+            }
+        }
+        #listaComprar {
+            margin: 30px;
+            .listaOpcionesPago {
+                font-size: 30px;
+                width: auto;
+                height: auto;
+                padding: 10px;
+            }
+        }
+        #pieComprar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }
 //SMARTPHONE
 @media (max-width: 480px) {
-
+    #cuerpoComprar {
+        #tituloComprar {
+            .tituloSeccion {
+                font-size: 40px;
+            }
+        }
+        #textoComprar {
+            margin: 0 10% 5% 10%;
+            .parrafoComprar {
+                font-size: 28px;
+            }
+        }
+        #subtituloComprar {
+            margin: 6% 0 3% 0;
+            .subtituloComprar {
+                font-size: 28px;
+            }
+        }
+        #listaComprar {
+            margin: 10px;
+            .listaOpcionesPago {
+                font-size: 28px;
+                width: auto;
+                height: auto;
+                padding: 6px;
+            }
+        }
+        #pieComprar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }
 
 /*****CONTACTO*****/
@@ -378,9 +536,115 @@
 }
 //TABLET
 @media (min-width: 481px) and (max-width: 1023px) {
-    
+    #cuerpoContacto {
+        #tituloContacto {
+            .tituloSeccion {
+                font-size: 54px;
+            }
+        }
+        #parrafoContacto {
+            margin-left: 5%;
+            margin-right: 5%;
+            .parrafoContacto {
+                font-size: 30px;
+            }
+        }
+        #formulario {
+            fieldset {
+                width: 90%;
+                margin: 5%;
+                padding: 3%;
+                legend {
+                    font-size: 25px;
+                }
+            }
+            h4 {
+                font-size: 30px;
+                margin: 10px;
+            }
+            label {
+                font-size: 25px;
+            }
+            input {
+                font-size: 25px;
+                margin: 3px;
+            }
+            textarea {
+                font-size: 25px;
+                width: 400;
+                margin: 2%;
+            }
+        }
+        #pieContacto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    } 
 }
 //SMARTPHONE
 @media (max-width: 480px) {
-
+    #cuerpoContacto {
+        #tituloContacto {
+            .tituloSeccion {
+                font-size: 40px;
+            }
+        }
+        #parrafoContacto {
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            .parrafoContacto {
+                font-size: 28px;
+            }
+        }
+        #formulario {
+            margin: 20px;
+            fieldset {
+                width: 85%;
+                margin: 4% 7,5% 4% 7,5%;
+                padding: 2%;
+                legend {
+                    font-size: 20px;
+                }
+            }
+            h4 {
+                font-size: 22px;
+                margin: 8px;
+            }
+            label {
+                font-size: 18px;
+            }
+            input {
+                font-size: 18px;
+                margin: 2px;
+            }
+            textarea {
+                font-size: 23px;
+                width: auto;
+                margin: 2%;
+            }
+        }
+        #pieContacto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .redesSociales {
+                display: flex;
+                justify-content: center;
+            }
+            address {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    } 
 }

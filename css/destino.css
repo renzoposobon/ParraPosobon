@@ -3,17 +3,12 @@
 body {
   font-family: "Source Sans Pro", sans-serif; }
 
+* {
+  padding: 0;
+  margin: 0; }
+
 /*****INDEX*****/
 @media (min-width: 1024px) {
-  body header div ul li a .logo {
-    width: 150px;
-    margin: 30px;
-    background-color: none; }
-  body header .nav .menu li .listas {
-    background-image: radial-gradient(#99D3E0 15%, salmon 80%);
-    padding: 6px;
-    margin: 20px;
-    font-size: 24px; }
   body .principal p {
     font-size: 45px; }
   body #whatsapp ul li a img {
@@ -39,20 +34,9 @@ body {
     justify-content: flex-end; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  body header {
-    background-image: linear-gradient(#fd7263 0%, #f0c0f1 75%);
-    flex-direction: column; }
-    body header div ul li a .logo {
-      width: 150px;
-      margin: 30px;
-      background-color: none; }
-    body header .nav .menu li .listas {
-      background-image: radial-gradient(#99D3E0 15%, salmon 80%);
-      padding: 5px;
-      margin: 5px;
-      font-size: 24px; }
   body .principal p {
-    font-size: 45px; }
+    font-size: 42px;
+    font-weight: bold; }
   body #whatsapp ul li a img {
     height: 80px;
     width: 80px; }
@@ -66,34 +50,95 @@ body {
       font-size: 40px; }
     body .secundario .opcionesPagoI {
       display: flex;
-      flex-direction: row; }
+      flex-direction: column; }
       body .secundario .opcionesPagoI .listaOpcionesPagoI {
         font-size: 35px;
         padding: 2%;
         display: flex;
         justify-content: center; }
-  body footer .redesSociales {
-    justify-content: flex-start; }
-  body footer address {
-    justify-content: flex-end; } }
+  body footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body footer .redesSociales {
+      display: flex;
+      justify-content: center; }
+    body footer address {
+      display: flex;
+      justify-content: center; } }
+
+@media (max-width: 480px) {
+  body .principal p {
+    font-size: 36px;
+    font-weight: bold; }
+  body #whatsapp ul li a img {
+    height: 60px;
+    width: 60px; }
+  body .secundario {
+    margin-top: 50px; }
+    body .secundario .sub .subtituloComprar {
+      font-size: 35px;
+      margin: 30px;
+      width: 520px; }
+    body .secundario .parrafoDos {
+      font-size: 34px; }
+    body .secundario .opcionesPagoI {
+      display: flex;
+      flex-direction: column; }
+      body .secundario .opcionesPagoI .listaOpcionesPagoI {
+        font-size: 28px;
+        padding: 2%;
+        display: flex;
+        justify-content: center; }
+  body footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    body footer .redesSociales {
+      display: flex;
+      justify-content: center; }
+    body footer address {
+      display: flex;
+      justify-content: center; } }
 
 /*****SOBRE MÍ*****/
 @media (min-width: 1024px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 54px; }
-  #cuerpoSobreMi #textoSobreMi .container .parrafoDeContenido {
-    font-size: 20px;
-    margin: 25px; } }
+  #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
+    font-size: 32px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 54px; }
-  #cuerpoSobreMi #textoSobreMi {
-    font-size: 20px;
-    margin: 25px; }
-  #cuerpoSobreMi #videoSobreMi {
-    margin: 2% 10% 2% 10%;
-    width: 80%; } }
+  #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
+    font-size: 20px; }
+  #cuerpoSobreMi #pieSobreMi {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoSobreMi #pieSobreMi .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoSobreMi #pieSobreMi address {
+      display: flex;
+      justify-content: center; } }
+
+@media (max-width: 480px) {
+  #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
+    font-size: 40px; }
+  #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
+    font-size: 18px; }
+  #cuerpoSobreMi #pieSobreMi {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoSobreMi #pieSobreMi .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoSobreMi #pieSobreMi address {
+      display: flex;
+      justify-content: center; } }
 
 /*****PRODUCTOS*****/
 @media (min-width: 1024px) {
@@ -109,28 +154,52 @@ body {
     font-size: 30px !important; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  #promociones h3 {
+  #cuerpoProductos #tituloProductos .tituloSeccion {
+    font-size: 54px; }
+  #cuerpoProductos #promociones h3 {
     font-size: 40px; }
-  #promociones .caracteristicas ul {
+  #cuerpoProductos #promociones .caracteristicas ul {
     margin: 20px; }
-    #promociones .caracteristicas ul li {
+    #cuerpoProductos #promociones .caracteristicas ul li {
       font-size: 23px; }
-  #promociones div ul li {
+  #cuerpoProductos #promociones div ul li {
     font-size: 27px; }
-  #promociones div p {
-    font-size: 23px !important; } }
+  #cuerpoProductos #promociones div p {
+    font-size: 23px !important; }
+  #cuerpoProductos #pieProductos {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoProductos #pieProductos .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoProductos #pieProductos address {
+      display: flex;
+      justify-content: center; } }
 
 @media (max-width: 480px) {
-  #promociones h3 {
+  #cuerpoProductos #tituloProductos .tituloSeccion {
+    font-size: 40px; }
+  #cuerpoProductos #promociones h3 {
     font-size: 30px; }
-  #promociones .caracteristicas ul {
+  #cuerpoProductos #promociones .caracteristicas ul {
     margin: 18px; }
-    #promociones .caracteristicas ul li {
+    #cuerpoProductos #promociones .caracteristicas ul li {
       font-size: 20px; }
-  #promociones div ul li {
+  #cuerpoProductos #promociones div ul li {
     font-size: 23px; }
-  #promociones div p {
-    font-size: 20px !important; } }
+  #cuerpoProductos #promociones div p {
+    font-size: 20px !important; }
+  #cuerpoProductos #pieProductos {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoProductos #pieProductos .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoProductos #pieProductos address {
+      display: flex;
+      justify-content: center; } }
 
 /*****COMPRAR*****/
 @media (min-width: 1024px) {
@@ -146,9 +215,64 @@ body {
     margin: 30px; }
     #cuerpoComprar #listaComprar .listaOpcionesPago {
       font-size: 35px;
-      width: 600px;
-      height: auto;
       padding: 10px; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #cuerpoComprar #tituloComprar .tituloSeccion {
+    font-size: 54px; }
+  #cuerpoComprar #textoComprar {
+    margin: 0 10% 5% 10%; }
+    #cuerpoComprar #textoComprar .parrafoComprar {
+      font-size: 30px; }
+  #cuerpoComprar #subtituloComprar .subtituloComprar {
+    font-size: 35px;
+    margin: 30px; }
+  #cuerpoComprar #listaComprar {
+    margin: 30px; }
+    #cuerpoComprar #listaComprar .listaOpcionesPago {
+      font-size: 30px;
+      width: auto;
+      height: auto;
+      padding: 10px; }
+  #cuerpoComprar #pieComprar {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoComprar #pieComprar .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoComprar #pieComprar address {
+      display: flex;
+      justify-content: center; } }
+
+@media (max-width: 480px) {
+  #cuerpoComprar #tituloComprar .tituloSeccion {
+    font-size: 40px; }
+  #cuerpoComprar #textoComprar {
+    margin: 0 10% 5% 10%; }
+    #cuerpoComprar #textoComprar .parrafoComprar {
+      font-size: 28px; }
+  #cuerpoComprar #subtituloComprar {
+    margin: 6% 0 3% 0; }
+    #cuerpoComprar #subtituloComprar .subtituloComprar {
+      font-size: 28px; }
+  #cuerpoComprar #listaComprar {
+    margin: 10px; }
+    #cuerpoComprar #listaComprar .listaOpcionesPago {
+      font-size: 28px;
+      width: auto;
+      height: auto;
+      padding: 6px; }
+  #cuerpoComprar #pieComprar {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoComprar #pieComprar .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoComprar #pieComprar address {
+      display: flex;
+      justify-content: center; } }
 
 /*****CONTACTO*****/
 @media (min-width: 1024px) {
@@ -176,6 +300,83 @@ body {
       font-size: 25px;
       width: 600px;
       margin: 3px; } }
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  #cuerpoContacto #tituloContacto .tituloSeccion {
+    font-size: 54px; }
+  #cuerpoContacto #parrafoContacto {
+    margin-left: 5%;
+    margin-right: 5%; }
+    #cuerpoContacto #parrafoContacto .parrafoContacto {
+      font-size: 30px; }
+  #cuerpoContacto #formulario fieldset {
+    width: 90%;
+    margin: 5%;
+    padding: 3%; }
+    #cuerpoContacto #formulario fieldset legend {
+      font-size: 25px; }
+  #cuerpoContacto #formulario h4 {
+    font-size: 30px;
+    margin: 10px; }
+  #cuerpoContacto #formulario label {
+    font-size: 25px; }
+  #cuerpoContacto #formulario input {
+    font-size: 25px;
+    margin: 3px; }
+  #cuerpoContacto #formulario textarea {
+    font-size: 25px;
+    width: 400;
+    margin: 2%; }
+  #cuerpoContacto #pieContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoContacto #pieContacto .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoContacto #pieContacto address {
+      display: flex;
+      justify-content: center; } }
+
+@media (max-width: 480px) {
+  #cuerpoContacto #tituloContacto .tituloSeccion {
+    font-size: 40px; }
+  #cuerpoContacto #parrafoContacto {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%; }
+    #cuerpoContacto #parrafoContacto .parrafoContacto {
+      font-size: 28px; }
+  #cuerpoContacto #formulario {
+    margin: 20px; }
+    #cuerpoContacto #formulario fieldset {
+      width: 85%;
+      margin: 4% 7,5% 4% 7,5%;
+      padding: 2%; }
+      #cuerpoContacto #formulario fieldset legend {
+        font-size: 20px; }
+    #cuerpoContacto #formulario h4 {
+      font-size: 22px;
+      margin: 8px; }
+    #cuerpoContacto #formulario label {
+      font-size: 18px; }
+    #cuerpoContacto #formulario input {
+      font-size: 18px;
+      margin: 2px; }
+    #cuerpoContacto #formulario textarea {
+      font-size: 23px;
+      width: auto;
+      margin: 2%; }
+  #cuerpoContacto #pieContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #cuerpoContacto #pieContacto .redesSociales {
+      display: flex;
+      justify-content: center; }
+    #cuerpoContacto #pieContacto address {
+      display: flex;
+      justify-content: center; } }
 
 /*extend*/
 .promo, .divPrecio .promo--Precio, div .parrafoCaracteristicas {
@@ -205,26 +406,9 @@ div .parrafoCaracteristicas {
   grid-template-areas: "cabeza" "whatsapp" "principal" "galeria" "secundario" "pie";
   grid-template-columns: 100%;
   grid-template-rows: auto; }
-  #cuerpoIndex #cabeza {
-    background-color: salmon;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    grid-area: cabeza; }
-    #cuerpoIndex #cabeza div ul {
-      list-style-type: none; }
-    #cuerpoIndex #cabeza .nav .menu {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center; }
-      #cuerpoIndex #cabeza .nav .menu li .listas {
-        text-decoration: none;
-        color: black;
-        font-family: "Source Sans Pro", sans-serif; }
+  #cuerpoIndex header {
+    font-weight: 400;
+    font-size: 24px; }
   #cuerpoIndex .principal {
     grid-area: principal;
     display: flex;
@@ -235,8 +419,9 @@ div .parrafoCaracteristicas {
     #cuerpoIndex .principal p {
       font-family: "Source Sans Pro", sans-serif;
       text-align: center;
-      font-weight: bold 900 italic;
-      line-height: 1.6; }
+      font-weight: bold;
+      line-height: 1.6;
+      text-transform: uppercase; }
   #cuerpoIndex #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -260,7 +445,8 @@ div .parrafoCaracteristicas {
     #cuerpoIndex .secundario .parrafoDos {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
     #cuerpoIndex .secundario .sub {
       display: flex;
       justify-content: center;
@@ -297,24 +483,8 @@ div .parrafoCaracteristicas {
   grid-template-rows: auto; }
   #cuerpoSobreMi #cabezaSobreMi {
     grid-area: cabezaSobreMi;
-    background-color: salmon;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center; }
-    #cuerpoSobreMi #cabezaSobreMi div ul {
-      list-style-type: none; }
-    #cuerpoSobreMi #cabezaSobreMi .nav .menu {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center; }
-      #cuerpoSobreMi #cabezaSobreMi .nav .menu li .listas {
-        text-decoration: none;
-        color: black;
-        font-family: "Source Sans Pro", sans-serif; }
+    font-weight: 400;
+    font-size: 24px; }
   #cuerpoSobreMi #tituloSobreMi {
     grid-area: tituloSobreMi; }
     #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
@@ -322,7 +492,9 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
   #cuerpoSobreMi #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -338,10 +510,11 @@ div .parrafoCaracteristicas {
         position: fixed; }
   #cuerpoSobreMi #textoSobreMi {
     grid-area: textoSobreMi; }
-    #cuerpoSobreMi #textoSobreMi .container .parrafoDeContenido {
+    #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
       text-align: center;
       line-height: 1.6;
-      color: black; }
+      color: black;
+      margin: 0 10% 3% 10%; }
   #cuerpoSobreMi #videoSobreMi {
     grid-area: videoSobreMi; }
     #cuerpoSobreMi #videoSobreMi video {
@@ -376,24 +549,8 @@ div .parrafoCaracteristicas {
   grid-template-rows: auto; }
   #cuerpoProductos #cabezaProductos {
     grid-area: cabezaProductos;
-    background-color: salmon;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center; }
-    #cuerpoProductos #cabezaProductos div ul {
-      list-style-type: none; }
-    #cuerpoProductos #cabezaProductos .nav .menu {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center; }
-      #cuerpoProductos #cabezaProductos .nav .menu li .listas {
-        text-decoration: none;
-        color: black;
-        font-family: "Source Sans Pro", sans-serif; }
+    font-weight: 400;
+    font-size: 24px; }
   #cuerpoProductos #tituloProductos {
     grid-area: tituloProductos; }
     #cuerpoProductos #tituloProductos .tituloSeccion {
@@ -401,7 +558,9 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
   #cuerpoProductos #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -486,24 +645,8 @@ div .parrafoCaracteristicas {
   grid-template-rows: auto; }
   #cuerpoComprar .cabecera {
     grid-area: cabezaComprar;
-    background-color: salmon;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center; }
-    #cuerpoComprar .cabecera div ul {
-      list-style-type: none; }
-    #cuerpoComprar .cabecera .nav .menu {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center; }
-      #cuerpoComprar .cabecera .nav .menu li .listas {
-        text-decoration: none;
-        color: black;
-        font-family: "Source Sans Pro", sans-serif; }
+    font-weight: 400;
+    font-size: 24px; }
   #cuerpoComprar #tituloComprar {
     grid-area: tituloComprar; }
     #cuerpoComprar #tituloComprar .tituloSeccion {
@@ -511,7 +654,9 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
   #cuerpoComprar #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -535,7 +680,8 @@ div .parrafoCaracteristicas {
   #cuerpoComprar #button {
     grid-area: boton;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 3%; }
   #cuerpoComprar #subtituloComprar {
     grid-area: subtituloComprar;
     display: flex;
@@ -550,7 +696,9 @@ div .parrafoCaracteristicas {
     align-items: center;
     list-style-type: none; }
     #cuerpoComprar #listaComprar .listaOpcionesPago {
-      text-align: center; }
+      text-align: center;
+      width: auto;
+      height: auto; }
   #cuerpoComprar #pieComprar {
     background-color: #b39f9f;
     grid-area: pieComprar; }
@@ -579,24 +727,8 @@ div .parrafoCaracteristicas {
   grid-template-rows: auto; }
   #cuerpoContacto .cabecera {
     grid-area: cabezaContacto;
-    background-color: salmon;
-    display: flex;
-    overflow: hidden;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center; }
-    #cuerpoContacto .cabecera div ul {
-      list-style-type: none; }
-    #cuerpoContacto .cabecera .nav .menu {
-      list-style-type: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center; }
-      #cuerpoContacto .cabecera .nav .menu li .listas {
-        text-decoration: none;
-        color: black;
-        font-family: "Source Sans Pro", sans-serif; }
+    font-weight: 400;
+    font-size: 24px; }
   #cuerpoContacto #tituloContacto {
     grid-area: tituloContacto; }
     #cuerpoContacto #tituloContacto .tituloSeccion {
@@ -604,7 +736,9 @@ div .parrafoCaracteristicas {
       font-weight: bold;
       line-height: 1.6;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
   #cuerpoContacto #whatsapp {
     grid-area: whatsapp;
     animation-name: logoWhatsapp;
@@ -625,7 +759,6 @@ div .parrafoCaracteristicas {
     margin-left: 5%;
     margin-right: 5%; }
     #cuerpoContacto #parrafoContacto .parrafoContacto {
-      font-size: 35px;
       text-align: center; }
   #cuerpoContacto #formulario {
     grid-area: formulario;
