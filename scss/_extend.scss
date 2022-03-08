@@ -6,13 +6,13 @@
 .divPrecio {
     .promo--Precio {
         @extend .promo;
-        color: rgb(82, 30, 24);
+        color: rgb(82, 30, 24) none;
     }
 }
 
 div {
     .parrafoCaracteristicas {
         @extend .promo;
-        color: rgb(82, 30, 24);
+        color: rgb(82, 30, 24) none;
     }
 }

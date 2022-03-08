@@ -12,7 +12,8 @@ $fondo2: sandybrown;
 $colorLista: black;
 $fondoCabecera: salmon;
 $pie: rgb(179, 159, 159);
-$subComprar: #70e0ad;
+$subComprarAlt: #70e0ad;
+$subComprar: cornsilk;
 
 /*INDEX*/
 #cuerpoIndex {
@@ -296,7 +297,7 @@ $subComprar: #70e0ad;
     "tituloComprar"
     "whatsapp"
     "textoComprar"
-    "boton"
+    /*"boton"*/
     "subtituloComprar"
     "listaComprar"
     "pieComprar";
@@ -325,16 +326,19 @@ $subComprar: #70e0ad;
             margin: 20px;
         }
     }
+    /*
     #button {
         grid-area: boton;
         display: flex;
         justify-content: center;
         margin: 3%;
     }
+    */
     #subtituloComprar {
         grid-area: subtituloComprar;
         display: flex;
         justify-content: center;
+        margin-top: 20px;
         .subtituloComprar {
             @include subComprarDesktop;
         }
