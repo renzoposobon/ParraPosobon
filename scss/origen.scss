@@ -78,16 +78,27 @@ $subComprar: cornsilk;
         grid-area: pie;
         background-color: $pie;
         height: auto;
+        display: flex;
         .redesSociales {
             list-style-type: none;
-            margin: 30px;
             padding: 10px;
             display: flex;
             align-items: center;
         }
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            p {
+                font-weight: bold;
+                margin-top: 8px;
+                align-self: center;
+            }
+        }
         address {
             display: flex;
-            margin: 10px;
+            font-weight: bold;
         }
     }
 }
@@ -149,16 +160,27 @@ $subComprar: cornsilk;
         grid-area: pieSobreMi;
         background-color: $pie;
         height: auto;
+        display: flex;
         .redesSociales {
             list-style-type: none;
-            margin: 30px;
             padding: 10px;
             display: flex;
             align-items: center;
         }
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            p {
+                font-weight: bold;
+                margin-top: 8px;
+                align-self: center;
+            }
+        }
         address {
             display: flex;
-                margin: 10px;
+            font-weight: bold;
         }
     }
 }
@@ -264,16 +286,27 @@ $subComprar: cornsilk;
         grid-area: pieProductos;
         background-color: $pie;
         height: auto;
+        display: flex;
         .redesSociales {
             list-style-type: none;
-            margin: 30px;
             padding: 10px;
             display: flex;
             align-items: center;
         }
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            p {
+                font-weight: bold;
+                margin-top: 8px;
+                align-self: center;
+            }
+        }
         address {
             display: flex;
-            margin: 10px;
+            font-weight: bold;
         }
     }
 }
@@ -358,16 +391,27 @@ $subComprar: cornsilk;
     #pieComprar {
         background-color: $pie;
         grid-area: pieComprar;
+        display: flex;
         .redesSociales {
             list-style-type: none;
-            margin: 30px;
             padding: 10px;
             display: flex;
             align-items: center;
         }
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            p {
+                font-weight: bold;
+                margin-top: 8px;
+                align-self: center;
+            }
+        }
         address {
             display: flex;
-            margin: 10px;
+            font-weight: bold;
         }
     }
 }
@@ -439,16 +483,27 @@ $subComprar: cornsilk;
     #pieContacto {
         grid-area: pieContacto;
         background-color: $pie;
+        display: flex;
         .redesSociales {
             list-style-type: none;
-            margin: 30px;
             padding: 10px;
             display: flex;
             align-items: center;
         }
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+            p {
+                font-weight: bold;
+                margin-top: 8px;
+                align-self: center;
+            }
+        }
         address {
             display: flex;
-            margin: 10px;
+            font-weight: bold;
         }
     }
 }

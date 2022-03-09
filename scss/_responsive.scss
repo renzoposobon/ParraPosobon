@@ -4,6 +4,7 @@
 }
 
 /*****INDEX*****/
+//DESKTOP
 @media (min-width: 1024px) {
     body {
         .principal {
@@ -46,12 +47,9 @@
             }
         }
         footer {
-   
-            .redesSociales {
-                justify-content: flex-start;
-            }
+            justify-content: space-between;
             address {
-                justify-content: flex-end;
+                align-self: center;
             }
         }
     }
@@ -103,14 +101,18 @@
         footer {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     }
@@ -151,25 +153,36 @@
             .opcionesPagoI {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 30px;
                 .listaOpcionesPagoI {
                     font-size: 28px;
                     padding: 2%;
                     display: flex;
                     justify-content: center;
+                    a {
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
                 }
             }
         }
         footer {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     }
@@ -187,6 +200,12 @@
         #textoSobreMi {
             .parrafoDeContenido {
                 font-size: 32px;
+            }
+        }
+        footer {
+            justify-content: space-between;
+            address {
+                align-self: center;
             }
         }
     }
@@ -207,14 +226,18 @@
         #pieSobreMi {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     }
@@ -235,14 +258,18 @@
         #pieSobreMi {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     }
@@ -276,6 +303,12 @@
                 p {
                     font-size: 30px !important;
                 }
+            }
+        }
+        footer {
+            justify-content: space-between;
+            address {
+                align-self: center;
             }
         }
     }
@@ -317,14 +350,18 @@
     #pieProductos {
         display: flex;
         align-items: center;
-        justify-content: center;
+        flex-direction: column;
         .redesSociales {
             display: flex;
             justify-content: center;
         }
+        div {
+            margin: 15px;
+        }
         address {
             display: flex;
             justify-content: center;
+            margin-bottom: 30px;
         }
     }
 }
@@ -364,17 +401,21 @@
         }
     }
     #pieProductos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .redesSociales {
         display: flex;
-        justify-content: center;
-    }
-    address {
-        display: flex;
-           justify-content: center;
-    }
+        align-items: center;
+        flex-direction: column;
+        .redesSociales {
+            display: flex;
+            justify-content: center;
+        }
+        div {
+            margin: 15px;
+        }
+        address {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
 }
 }
 }
@@ -402,6 +443,12 @@
             .listaOpcionesPago {
                 font-size: 35px;
                 padding: 10px;
+            }
+        }
+        footer {
+            justify-content: space-between;
+            address {
+                align-self: center;
             }
         }
     }
@@ -438,14 +485,18 @@
         #pieComprar {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     }
@@ -471,25 +522,35 @@
             }
         }
         #listaComprar {
-            margin: 10px;
+            margin: 10px 10px 30px 10px;
             .listaOpcionesPago {
                 font-size: 28px;
                 width: auto;
                 height: auto;
                 padding: 6px;
+                a {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
         }
         #pieComprar {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     }
@@ -530,6 +591,12 @@
                 font-size: 25px;
                 width: 600px;
                 margin: 3px;
+            }
+        }
+        footer {
+            justify-content: space-between;
+            address {
+                align-self: center;
             }
         }
     }
@@ -578,14 +645,18 @@
         #pieContacto {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     } 
@@ -636,14 +707,18 @@
         #pieContacto {
             display: flex;
             align-items: center;
-            justify-content: center;
+            flex-direction: column;
             .redesSociales {
                 display: flex;
                 justify-content: center;
             }
+            div {
+                margin: 15px;
+            }
             address {
                 display: flex;
                 justify-content: center;
+                margin-bottom: 30px;
             }
         }
     } 
