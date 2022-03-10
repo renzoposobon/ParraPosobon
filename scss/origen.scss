@@ -121,8 +121,8 @@ $subComprar: cornsilk;
     "cabezaSobreMi"
     "tituloSobreMi"
     "whatsapp"
+    "fotoSobreMi"
     "textoSobreMi"
-    "videoSobreMi"
     "pieSobreMi";
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -140,20 +140,29 @@ $subComprar: cornsilk;
     #whatsapp {
         @include whatsapp;
     }
+    #fotoSobreMi {
+        grid-area: fotoSobreMi;
+        img {
+            margin: 2% 10% 2% 10%;
+            width: 80%;
+        }
+    }
     #textoSobreMi {
         grid-area: textoSobreMi;
+        display: flex;
+        margin-bottom: 30px;
+        .apertura {
+            float: left;
+        }
         .parrafoDeContenido {
             text-align: center;
             line-height: 1.6;
             color: black;
             margin: 0 10% 3% 10%;
         }
-    }
-    #videoSobreMi {
-        grid-area: videoSobreMi;
-        video {
-            margin: 2% 10% 2% 10%;
-            width: 80%;
+        .cierre {
+            float: right;
+            align-self: flex-end;
         }
     }
     #pieSobreMi {
@@ -205,7 +214,6 @@ $subComprar: cornsilk;
     "whatsapp"
     "catalogo"
     "icono"
-    "promociones"
     "pieProductos";
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -253,34 +261,6 @@ $subComprar: cornsilk;
     #icono {
         grid-area: icono;
         margin: 0 3% 0 3%;
-    }
-    #promociones {
-        grid-area: promociones;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h3 {
-            background-color: $fondo2;
-        }
-        .caracteristicas {
-            .promo {
-                list-style-type: none;
-                li {
-                    text-align: center;
-                }
-            }
-        }
-        .divPrecio {
-            .promo--Precio {
-                list-style-type: none;
-            }
-        }
-        div {
-            .parrafoCaracteristicas {
-                text-align: center;
-            }
-        }
     }
     #pieProductos {
         grid-area: pieProductos;

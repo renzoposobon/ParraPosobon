@@ -31,7 +31,8 @@ body {
   body footer {
     justify-content: space-between; }
     body footer address {
-      align-self: center; } }
+      align-self: center;
+      margin-right: 15px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   body .principal p {
@@ -115,18 +116,35 @@ body {
 @media (min-width: 1024px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 54px; }
+  #cuerpoSobreMi #textoSobreMi .apertura {
+    margin-left: 70px;
+    width: 50px;
+    height: 50px; }
   #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
     font-size: 32px; }
+  #cuerpoSobreMi #textoSobreMi .cierre {
+    margin-right: 70px;
+    width: 50px;
+    height: 50px; }
   #cuerpoSobreMi footer {
     justify-content: space-between; }
     #cuerpoSobreMi footer address {
-      align-self: center; } }
+      align-self: center;
+      margin-right: 15px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 54px; }
+  #cuerpoSobreMi #textoSobreMi .apertura {
+    margin-left: 50px;
+    width: 40px;
+    height: 40px; }
   #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
-    font-size: 20px; }
+    font-size: 26px; }
+  #cuerpoSobreMi #textoSobreMi .cierre {
+    margin-right: 50px;
+    width: 40px;
+    height: 40px; }
   #cuerpoSobreMi #pieSobreMi {
     display: flex;
     align-items: center;
@@ -144,8 +162,16 @@ body {
 @media (max-width: 480px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 40px; }
+  #cuerpoSobreMi #textoSobreMi .apertura {
+    margin-left: 30px;
+    width: 30px;
+    height: 30px; }
   #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
-    font-size: 18px; }
+    font-size: 20px; }
+  #cuerpoSobreMi #textoSobreMi .cierre {
+    margin-right: 30px;
+    width: 30px;
+    height: 30px; }
   #cuerpoSobreMi #pieSobreMi {
     display: flex;
     align-items: center;
@@ -162,34 +188,15 @@ body {
 
 /*****PRODUCTOS*****/
 @media (min-width: 1024px) {
-  #cuerpoProductos #promociones h3 {
-    font-size: 45px; }
-  #cuerpoProductos #promociones .caracteristicas ul {
-    margin: 30px; }
-    #cuerpoProductos #promociones .caracteristicas ul li {
-      font-size: 30px; }
-  #cuerpoProductos #promociones div ul li {
-    font-size: 35px; }
-  #cuerpoProductos #promociones div p {
-    font-size: 30px !important; }
   #cuerpoProductos footer {
     justify-content: space-between; }
     #cuerpoProductos footer address {
-      align-self: center; } }
+      align-self: center;
+      margin-right: 15px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   #cuerpoProductos #tituloProductos .tituloSeccion {
     font-size: 54px; }
-  #cuerpoProductos #promociones h3 {
-    font-size: 40px; }
-  #cuerpoProductos #promociones .caracteristicas ul {
-    margin: 20px; }
-    #cuerpoProductos #promociones .caracteristicas ul li {
-      font-size: 23px; }
-  #cuerpoProductos #promociones div ul li {
-    font-size: 27px; }
-  #cuerpoProductos #promociones div p {
-    font-size: 23px !important; }
   #cuerpoProductos #pieProductos {
     display: flex;
     align-items: center;
@@ -207,16 +214,6 @@ body {
 @media (max-width: 480px) {
   #cuerpoProductos #tituloProductos .tituloSeccion {
     font-size: 40px; }
-  #cuerpoProductos #promociones h3 {
-    font-size: 30px; }
-  #cuerpoProductos #promociones .caracteristicas ul {
-    margin: 18px; }
-    #cuerpoProductos #promociones .caracteristicas ul li {
-      font-size: 20px; }
-  #cuerpoProductos #promociones div ul li {
-    font-size: 23px; }
-  #cuerpoProductos #promociones div p {
-    font-size: 20px !important; }
   #cuerpoProductos #pieProductos {
     display: flex;
     align-items: center;
@@ -249,7 +246,8 @@ body {
   #cuerpoComprar footer {
     justify-content: space-between; }
     #cuerpoComprar footer address {
-      align-self: center; } }
+      align-self: center;
+      margin-right: 15px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   #cuerpoComprar #tituloComprar .tituloSeccion {
@@ -346,7 +344,8 @@ body {
   #cuerpoContacto footer {
     justify-content: space-between; }
     #cuerpoContacto footer address {
-      align-self: center; } }
+      align-self: center;
+      margin-right: 15px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   #cuerpoContacto #tituloContacto .tituloSeccion {
@@ -540,7 +539,7 @@ div .parrafoCaracteristicas {
 #cuerpoSobreMi {
   background-color: #f0c0f1;
   display: grid;
-  grid-template-areas: "cabezaSobreMi" "tituloSobreMi" "whatsapp" "textoSobreMi" "videoSobreMi" "pieSobreMi";
+  grid-template-areas: "cabezaSobreMi" "tituloSobreMi" "whatsapp" "fotoSobreMi" "textoSobreMi" "pieSobreMi";
   grid-template-columns: 100%;
   grid-template-rows: auto; }
   #cuerpoSobreMi #cabezaSobreMi {
@@ -570,18 +569,25 @@ div .parrafoCaracteristicas {
       #cuerpoSobreMi #whatsapp ul li a img {
         z-index: 1;
         position: fixed; }
+  #cuerpoSobreMi #fotoSobreMi {
+    grid-area: fotoSobreMi; }
+    #cuerpoSobreMi #fotoSobreMi img {
+      margin: 2% 10% 2% 10%;
+      width: 80%; }
   #cuerpoSobreMi #textoSobreMi {
-    grid-area: textoSobreMi; }
+    grid-area: textoSobreMi;
+    display: flex;
+    margin-bottom: 30px; }
+    #cuerpoSobreMi #textoSobreMi .apertura {
+      float: left; }
     #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
       text-align: center;
       line-height: 1.6;
       color: black;
       margin: 0 10% 3% 10%; }
-  #cuerpoSobreMi #videoSobreMi {
-    grid-area: videoSobreMi; }
-    #cuerpoSobreMi #videoSobreMi video {
-      margin: 2% 10% 2% 10%;
-      width: 80%; }
+    #cuerpoSobreMi #textoSobreMi .cierre {
+      float: right;
+      align-self: flex-end; }
   #cuerpoSobreMi #pieSobreMi {
     grid-area: pieSobreMi;
     background-color: #b39f9f;
@@ -615,7 +621,7 @@ div .parrafoCaracteristicas {
 #cuerpoProductos {
   background-color: #f0c0f1;
   display: grid;
-  grid-template-areas: "cabezaProductos" "tituloProductos" "whatsapp" "catalogo" "icono" "promociones" "pieProductos";
+  grid-template-areas: "cabezaProductos" "tituloProductos" "whatsapp" "catalogo" "icono" "pieProductos";
   grid-template-columns: 100%;
   grid-template-rows: auto; }
   #cuerpoProductos #cabezaProductos {
@@ -671,22 +677,6 @@ div .parrafoCaracteristicas {
   #cuerpoProductos #icono {
     grid-area: icono;
     margin: 0 3% 0 3%; }
-  #cuerpoProductos #promociones {
-    grid-area: promociones;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #cuerpoProductos #promociones h3 {
-      background-color: sandybrown; }
-    #cuerpoProductos #promociones .caracteristicas .promo, #cuerpoProductos #promociones .caracteristicas .divPrecio .promo--Precio, .divPrecio #cuerpoProductos #promociones .caracteristicas .promo--Precio, #cuerpoProductos #promociones .caracteristicas div .parrafoCaracteristicas, div #cuerpoProductos #promociones .caracteristicas .parrafoCaracteristicas {
-      list-style-type: none; }
-      #cuerpoProductos #promociones .caracteristicas .promo li, #cuerpoProductos #promociones .caracteristicas .divPrecio .promo--Precio li, .divPrecio #cuerpoProductos #promociones .caracteristicas .promo--Precio li, #cuerpoProductos #promociones .caracteristicas div .parrafoCaracteristicas li, div #cuerpoProductos #promociones .caracteristicas .parrafoCaracteristicas li {
-        text-align: center; }
-    #cuerpoProductos #promociones .divPrecio .promo--Precio {
-      list-style-type: none; }
-    #cuerpoProductos #promociones div .parrafoCaracteristicas {
-      text-align: center; }
   #cuerpoProductos #pieProductos {
     grid-area: pieProductos;
     background-color: #b39f9f;

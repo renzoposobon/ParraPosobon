@@ -50,6 +50,7 @@
             justify-content: space-between;
             address {
                 align-self: center;
+                margin-right: 15px;
             }
         }
     }
@@ -198,14 +199,25 @@
             }
         }
         #textoSobreMi {
+            .apertura {
+                margin-left: 70px;
+                width: 50px;
+                height: 50px;
+            }
             .parrafoDeContenido {
                 font-size: 32px;
+            }
+            .cierre {
+                margin-right: 70px;
+                width: 50px;
+                height: 50px;
             }
         }
         footer {
             justify-content: space-between;
             address {
                 align-self: center;
+                margin-right: 15px;
             }
         }
     }
@@ -219,8 +231,18 @@
             }
         }
         #textoSobreMi {
+            .apertura {
+                margin-left: 50px;
+                width: 40px;
+                height: 40px;
+            }
             .parrafoDeContenido {
-                font-size: 20px;
+                font-size: 26px;
+            }
+            .cierre {
+                margin-right: 50px;
+                width: 40px;
+                height: 40px;
             }
         }
         #pieSobreMi {
@@ -251,8 +273,18 @@
             }
         }
         #textoSobreMi {
+            .apertura {
+                margin-left: 30px;
+                width: 30px;
+                height: 30px;
+            }
             .parrafoDeContenido {
-                font-size: 18px;
+                font-size: 20px;
+            }
+            .cierre {
+                margin-right: 30px;
+                width: 30px;
+                height: 30px;
             }
         }
         #pieSobreMi {
@@ -280,35 +312,11 @@
 //DESKTOP
 @media (min-width: 1024px) {
     #cuerpoProductos {
-        #promociones {
-            h3 {
-                font-size: 45px;
-            }
-            .caracteristicas {
-                ul {
-                    margin: 30px;
-                    li {
-                        font-size: 30px;
-                    }
-                }
-            }
-            div {
-                ul {
-                    li {
-                        font-size: 35px;
-                    }
-                }
-            }
-            div {
-                p {
-                    font-size: 30px !important;
-                }
-            }
-        }
         footer {
             justify-content: space-between;
             address {
                 align-self: center;
+                margin-right: 15px;
             }
         }
     }
@@ -322,31 +330,7 @@
             font-size: 54px;
         }
     }
-    #promociones {
-        h3 {
-            font-size: 40px;
-        }
-        .caracteristicas {
-            ul {
-                margin: 20px;
-                li {
-                    font-size: 23px;
-                }
-            }
-        }
-        div {
-            ul {
-                li {
-                    font-size: 27px;
-                }
-            }
-        }
-        div {
-            p {
-                font-size: 23px !important;
-            }
-        }
-    }
+    
     #pieProductos {
         display: flex;
         align-items: center;
@@ -373,31 +357,6 @@
     #tituloProductos {
         .tituloSeccion {
             font-size: 40px;
-        }
-    }
-    #promociones {
-        h3 {
-            font-size: 30px;
-        }
-        .caracteristicas {
-            ul {
-                margin: 18px;
-                li {
-                    font-size: 20px;
-                }
-            }
-        }
-        div {
-            ul {
-                li {
-                    font-size: 23px;
-                }
-            }
-        }
-        div {
-            p {
-                font-size: 20px !important;
-            }
         }
     }
     #pieProductos {
@@ -449,6 +408,7 @@
             justify-content: space-between;
             address {
                 align-self: center;
+                margin-right: 15px;
             }
         }
     }
@@ -597,6 +557,7 @@
             justify-content: space-between;
             address {
                 align-self: center;
+                margin-right: 15px;
             }
         }
     }
