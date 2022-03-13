@@ -150,9 +150,11 @@ $subComprar: cornsilk;
     #textoSobreMi {
         grid-area: textoSobreMi;
         display: flex;
+        flex-direction: column;
         margin-bottom: 30px;
         .apertura {
-            float: left;
+            justify-content: center;
+            align-self: center;
         }
         .parrafoDeContenido {
             text-align: center;
@@ -161,8 +163,8 @@ $subComprar: cornsilk;
             margin: 0 10% 3% 10%;
         }
         .cierre {
-            float: right;
-            align-self: flex-end;
+            align-self: center;
+            justify-content: center;
         }
     }
     #pieSobreMi {
@@ -245,16 +247,12 @@ $subComprar: cornsilk;
                 font-size: 35px;
                 font-family: 'Source Sans Pro', sans-serif;
                 text-align: center;
-                width: 300px;
-                margin-left: 30px;
             }
             .parrafoDeProductos {
                 font-size: 20px;
                 font-family: 'Source Sans Pro', sans-serif;
-                width: 300px;
                 height: auto;
                 text-align: center;
-                margin-left: 17px;
             }
         }
     }

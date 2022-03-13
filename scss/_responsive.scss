@@ -195,22 +195,20 @@
     #cuerpoSobreMi {
         #tituloSobreMi {
             .tituloSeccion {
-                font-size: 54px;
+                font-size: 58px;
             }
         }
         #textoSobreMi {
             .apertura {
-                margin-left: 70px;
-                width: 50px;
-                height: 50px;
+                width: 100px;
+                height: 100px;
             }
             .parrafoDeContenido {
                 font-size: 32px;
             }
             .cierre {
-                margin-right: 70px;
-                width: 50px;
-                height: 50px;
+                width: 100px;
+                height: 5¿100px;
             }
         }
         footer {
@@ -232,17 +230,15 @@
         }
         #textoSobreMi {
             .apertura {
-                margin-left: 50px;
-                width: 40px;
-                height: 40px;
+                width: 70px;
+                height: 70px;
             }
             .parrafoDeContenido {
                 font-size: 26px;
             }
             .cierre {
-                margin-right: 50px;
-                width: 40px;
-                height: 40px;
+                width: 70px;
+                height: 70px;
             }
         }
         #pieSobreMi {
@@ -272,19 +268,20 @@
                 font-size: 40px;
             }
         }
+        #fotoSobreMi {
+            margin-bottom: 20px;
+        }
         #textoSobreMi {
             .apertura {
-                margin-left: 30px;
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
             }
             .parrafoDeContenido {
                 font-size: 20px;
             }
             .cierre {
-                margin-right: 30px;
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
             }
         }
         #pieSobreMi {
@@ -330,7 +327,6 @@
             font-size: 54px;
         }
     }
-    
     #pieProductos {
         display: flex;
         align-items: center;
@@ -357,6 +353,13 @@
     #tituloProductos {
         .tituloSeccion {
             font-size: 40px;
+        }
+    }
+    #catalogo {
+        .productos {
+            .parrafoDeProductos {
+                margin-bottom: 15px;
+            }
         }
     }
     #pieProductos {

@@ -115,17 +115,15 @@ body {
 /*****SOBRE MÍ*****/
 @media (min-width: 1024px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
-    font-size: 54px; }
+    font-size: 58px; }
   #cuerpoSobreMi #textoSobreMi .apertura {
-    margin-left: 70px;
-    width: 50px;
-    height: 50px; }
+    width: 100px;
+    height: 100px; }
   #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
     font-size: 32px; }
   #cuerpoSobreMi #textoSobreMi .cierre {
-    margin-right: 70px;
-    width: 50px;
-    height: 50px; }
+    width: 100px;
+    height: 5¿100px; }
   #cuerpoSobreMi footer {
     justify-content: space-between; }
     #cuerpoSobreMi footer address {
@@ -136,15 +134,13 @@ body {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 54px; }
   #cuerpoSobreMi #textoSobreMi .apertura {
-    margin-left: 50px;
-    width: 40px;
-    height: 40px; }
+    width: 70px;
+    height: 70px; }
   #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
     font-size: 26px; }
   #cuerpoSobreMi #textoSobreMi .cierre {
-    margin-right: 50px;
-    width: 40px;
-    height: 40px; }
+    width: 70px;
+    height: 70px; }
   #cuerpoSobreMi #pieSobreMi {
     display: flex;
     align-items: center;
@@ -162,16 +158,16 @@ body {
 @media (max-width: 480px) {
   #cuerpoSobreMi #tituloSobreMi .tituloSeccion {
     font-size: 40px; }
+  #cuerpoSobreMi #fotoSobreMi {
+    margin-bottom: 20px; }
   #cuerpoSobreMi #textoSobreMi .apertura {
-    margin-left: 30px;
-    width: 30px;
-    height: 30px; }
+    width: 50px;
+    height: 50px; }
   #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
     font-size: 20px; }
   #cuerpoSobreMi #textoSobreMi .cierre {
-    margin-right: 30px;
-    width: 30px;
-    height: 30px; }
+    width: 50px;
+    height: 50px; }
   #cuerpoSobreMi #pieSobreMi {
     display: flex;
     align-items: center;
@@ -214,6 +210,8 @@ body {
 @media (max-width: 480px) {
   #cuerpoProductos #tituloProductos .tituloSeccion {
     font-size: 40px; }
+  #cuerpoProductos #catalogo .productos .parrafoDeProductos {
+    margin-bottom: 15px; }
   #cuerpoProductos #pieProductos {
     display: flex;
     align-items: center;
@@ -577,17 +575,19 @@ div .parrafoCaracteristicas {
   #cuerpoSobreMi #textoSobreMi {
     grid-area: textoSobreMi;
     display: flex;
+    flex-direction: column;
     margin-bottom: 30px; }
     #cuerpoSobreMi #textoSobreMi .apertura {
-      float: left; }
+      justify-content: center;
+      align-self: center; }
     #cuerpoSobreMi #textoSobreMi .parrafoDeContenido {
       text-align: center;
       line-height: 1.6;
       color: black;
       margin: 0 10% 3% 10%; }
     #cuerpoSobreMi #textoSobreMi .cierre {
-      float: right;
-      align-self: flex-end; }
+      align-self: center;
+      justify-content: center; }
   #cuerpoSobreMi #pieSobreMi {
     grid-area: pieSobreMi;
     background-color: #b39f9f;
@@ -664,16 +664,12 @@ div .parrafoCaracteristicas {
       #cuerpoProductos #catalogo .productos .tituloProductos {
         font-size: 35px;
         font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-        width: 300px;
-        margin-left: 30px; }
+        text-align: center; }
       #cuerpoProductos #catalogo .productos .parrafoDeProductos {
         font-size: 20px;
         font-family: 'Source Sans Pro', sans-serif;
-        width: 300px;
         height: auto;
-        text-align: center;
-        margin-left: 17px; }
+        text-align: center; }
   #cuerpoProductos #icono {
     grid-area: icono;
     margin: 0 3% 0 3%; }
