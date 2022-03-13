@@ -25,19 +25,21 @@
                 }
         }
         .secundario {
-            .sub {
-                .subtituloComprar {
-                    font-size: 45px;
-                    margin: 30px;
-                    width: 520px;
-                }
-            }
             .parrafoDos {
                 font-size: 60px;
+                margin: 50px;
+            }
+            .sub {
+                margin: 40px;
+                .subtituloComprar {
+                    font-size: 45px;
+                    width: 520px;
+                }
             }
             .opcionesPagoI {
                 display: flex;
                 flex-direction: row;
+                margin: 30px;
                 .listaOpcionesPagoI {
                     font-size: 35px;
                     padding: 2%;
@@ -77,20 +79,21 @@
                 }
         }
         .secundario {
-            margin-top: 50px;
+            .parrafoDos {
+                font-size: 40px;
+                margin: 40px;
+            }
             .sub {
                 .subtituloComprar {
                     font-size: 35px;
-                    margin: 30px;
                     width: 520px;
+                    margin: 30px;
                 }
-            }
-            .parrafoDos {
-                font-size: 40px;
             }
             .opcionesPagoI {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 30px;
                 .listaOpcionesPagoI {
                     font-size: 35px;
                     padding: 2%;
@@ -140,16 +143,16 @@
                 }
         }
         .secundario {
-            margin-top: 50px;
+            .parrafoDos {
+                font-size: 34px;
+                margin: 45px;
+            }
             .sub {
                 .subtituloComprar {
                     font-size: 35px;
                     margin: 30px;
                     width: 520px;
                 }
-            }
-            .parrafoDos {
-                font-size: 34px;
             }
             .opcionesPagoI {
                 display: flex;

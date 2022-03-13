@@ -14,15 +14,18 @@ body {
   body #whatsapp ul li a img {
     height: 100px;
     width: 100px; }
-  body .secundario .sub .subtituloComprar {
-    font-size: 45px;
-    margin: 30px;
-    width: 520px; }
   body .secundario .parrafoDos {
-    font-size: 60px; }
+    font-size: 60px;
+    margin: 50px; }
+  body .secundario .sub {
+    margin: 40px; }
+    body .secundario .sub .subtituloComprar {
+      font-size: 45px;
+      width: 520px; }
   body .secundario .opcionesPagoI {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin: 30px; }
     body .secundario .opcionesPagoI .listaOpcionesPagoI {
       font-size: 35px;
       padding: 2%;
@@ -41,22 +44,22 @@ body {
   body #whatsapp ul li a img {
     height: 80px;
     width: 80px; }
-  body .secundario {
-    margin-top: 50px; }
-    body .secundario .sub .subtituloComprar {
+  body .secundario .parrafoDos {
+    font-size: 40px;
+    margin: 40px; }
+  body .secundario .sub .subtituloComprar {
+    font-size: 35px;
+    width: 520px;
+    margin: 30px; }
+  body .secundario .opcionesPagoI {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    body .secundario .opcionesPagoI .listaOpcionesPagoI {
       font-size: 35px;
-      margin: 30px;
-      width: 520px; }
-    body .secundario .parrafoDos {
-      font-size: 40px; }
-    body .secundario .opcionesPagoI {
+      padding: 2%;
       display: flex;
-      flex-direction: column; }
-      body .secundario .opcionesPagoI .listaOpcionesPagoI {
-        font-size: 35px;
-        padding: 2%;
-        display: flex;
-        justify-content: center; }
+      justify-content: center; }
   body footer {
     display: flex;
     align-items: center;
@@ -78,26 +81,25 @@ body {
   body #whatsapp ul li a img {
     height: 60px;
     width: 60px; }
-  body .secundario {
-    margin-top: 50px; }
-    body .secundario .sub .subtituloComprar {
-      font-size: 35px;
-      margin: 30px;
-      width: 520px; }
-    body .secundario .parrafoDos {
-      font-size: 34px; }
-    body .secundario .opcionesPagoI {
+  body .secundario .parrafoDos {
+    font-size: 34px;
+    margin: 45px; }
+  body .secundario .sub .subtituloComprar {
+    font-size: 35px;
+    margin: 30px;
+    width: 520px; }
+  body .secundario .opcionesPagoI {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    body .secundario .opcionesPagoI .listaOpcionesPagoI {
+      font-size: 28px;
+      padding: 2%;
       display: flex;
-      flex-direction: column;
-      margin-bottom: 30px; }
-      body .secundario .opcionesPagoI .listaOpcionesPagoI {
-        font-size: 28px;
-        padding: 2%;
-        display: flex;
-        justify-content: center; }
-        body .secundario .opcionesPagoI .listaOpcionesPagoI a img {
-          width: 30px;
-          height: 30px; }
+      justify-content: center; }
+      body .secundario .opcionesPagoI .listaOpcionesPagoI a img {
+        width: 30px;
+        height: 30px; }
   body footer {
     display: flex;
     align-items: center;
